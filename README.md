@@ -21,3 +21,4 @@ $ gulp
 You should now have folder `build` in project root `TE`.
  
 Navigate to `localhost:9000` in browser and you should see `index.html` open, as the server runs in the background.
+(https://faviolla.github.io/TE/build/index.html)
