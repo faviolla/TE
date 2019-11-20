@@ -1,0 +1,163 @@
+<div class="modal-content modal-content--review modal--review ">
+    <a href="#" class="close-modal" data-dismiss="modal"></a>
+    <div class="modal-body">
+        <form class="form_validate" id="review_form" method="POST" action="">   
+            <div class="review-form-content">
+                <span class="modal-title">Контактные данные</span>  
+                <div class="row row-items">
+                    <div class="input-holder field">
+                        <input type="text" class="input form-control js-input" data-validate="required">
+                        <span class="label-input">Имя</span>
+                        <span class="error-text">Данные введены некорректно</span>
+                    </div>
+                    <div class="input-holder field">
+                        <input type="text" class="input form-control js-input" data-validate="required-email">
+                        <span class="label-input">E-mail</span>
+                        <span class="error-text">Данные введены некорректно</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <span class="modal-subtitle">или
+                    <span class="link-name" data-openmodal="modals/login.html">авторизируйтесь</span></span>
+                </div>                  
+                <span class="modal-title">Оставьте свой отзыв</span>                                         
+                <span class="raiting__title">Ваша оценка</span>                                        
+                <div class="raiting__row">
+                    <div class="raiting__stars">
+                        <input id="item5" name="raiting" type="radio" value="5" class="raiting__check">
+                        <label for="item5" class="raiting__star"><i class="ic-big-star"></i><span class="rating-name">5</span></label>
+                        <input id="item4" name="raiting" type="radio" value="4" checked class="raiting__check">
+                        <label for="item4" class="raiting__star"><i class="ic-big-star"></i><span class="rating-name">4</span></label>
+                        <input id="item3" name="raiting" type="radio" value="3" class="raiting__check">
+                        <label for="item3" class="raiting__star"><i class="ic-big-star"></i><span class="rating-name">3</span></label>
+                        <input id="item2" name="raiting" type="radio" value="2" class="raiting__check">
+                        <label for="item2" class="raiting__star"><i class="ic-big-star"></i><span class="rating-name">2</span></label>
+                        <input id="item1" name="raiting" type="radio" value="1" class="raiting__check">
+                        <label for="item1" class="raiting__star"><i class="ic-big-star"></i><span class="rating-name">1</span></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="review-radio">
+                        <label>                                                   
+                            <input type="radio" name="1" class="radio-btn" checked>
+                            <span>Купил в Техноеже</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="1" class="radio-btn">
+                            <span>Купил в другом месте</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="1" class="radio-btn">
+                            <span>Собираюсь купить</span>
+                        </label>                                               
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-holder field">
+                        <textarea class="input form-control js-input textarea" data-validate="required-textarea"></textarea>
+                        <span class="label-input">Отзыв</span>
+                        <span class="error-text">Данные введены некорректно</span>
+                    </div>
+                </div>
+                <div class="review-type ">
+                    <div class="green-color review-type-title js-type-comment">Достоинства</div>
+                    <div class=" field">
+                        <textarea class="input textarea form-control js-input"></textarea>
+                        <span class="label-input">Комментарий</span>                                                
+                    </div>
+                </div> 
+                <div class="review-type">
+                    <div class="red-color review-type-title js-type-comment">Недостатки</div>
+                    <div class=" field ">
+                        <textarea class="input textarea form-control js-input"></textarea>
+                        <span class="label-input">Комментарий</span>                                                
+                    </div>
+                </div>  
+                <div class="review-photo">
+                    <div class="review-photo-holder">
+                        <div class="review-photo-add">                            
+                            <input type="file" id="files" name="files[]" multiple />
+                            <label for="files" class="label-files">Добавьте сюда свои фото товара</label> 
+                            <div class="review-photo-info">Это поможет другим опредиться с выбором</div> 
+                        </div>
+                        <div class="review-photo-items">
+                            <output id="list"></output>
+                        </div>                        
+                    </div>                                                           
+                </div>
+                <div class="row">
+                    <div class="input-holder field">
+                        <input type="text" class="input form-control js-input" data-validate="required-url">
+                        <span class="label-input">Ссылка на ваше видео в Youtube</span>
+                        <span class="error-text">Данные введены некорректно</span>
+                    </div>                        
+                </div>
+                <div class="row">
+                    <div class="checkbox">
+                        <label class="label-checkbox" for="receive__mail">
+                            <span class="checkout-checkbox">                                                   
+                                <input type="checkbox" class="checkbox-toggle" id="receive__mail">
+                                <i class="ic-checkbox"></i>
+                                <span class="checkout-checkbox-text">Получать ответы на отзыв</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>                 
+                <div class="row submit-holder">
+                    <input type="submit" class="btn btn-submit" value="Публиковать отзыв">
+                </div>                                
+            </div>              
+        </form> 
+        <div class="success-send-form">
+            <div class="row">
+                <div class="modal-title">
+                    <span>Спасибо за отзыв</span>
+                </div>					
+            </div>
+            <div class="row">						
+               	<span>У нас включена премодерация, поэтому отзывы публикуются после проверки.</span>					
+            </div>	
+           			
+        </div>
+    </div>
+</div>
+<script>
+    function handleFileSelect(evt) {
+        var files = evt.target.files; // FileList object
+    
+        // Loop through the FileList and render image files as thumbnails.
+        for (var i = 0, f; f = files[i]; i++) {
+    
+          // Only process image files.
+          if (!f.type.match('image.*')) {
+            continue;
+          }
+    
+          var reader = new FileReader();
+    
+          // Closure to capture the file information.
+          reader.onload = (function(theFile) {
+            return function(e) {
+              // Render thumbnail.
+              var span = document.createElement('span');
+              span.className = 'review-photo-item';
+              span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                                '" title="', escape(theFile.name), '"/>' + '<span class="review-photo-remove">Удалить</span>'].join('');
+              document.getElementById('list').insertBefore(span, null);
+            };
+          })(f);
+    
+          // Read in the image file as a data URL.
+          reader.readAsDataURL(f);
+        }
+    }
+
+    function removeImg(){
+        $(document).on("click" , ".review-photo-remove" , function(e){
+            $(this).parents(".review-photo-item").remove();
+        });
+    };
+    removeImg();
+    
+    document.getElementById('files').addEventListener('change', handleFileSelect, false);
+</script>

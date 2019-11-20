@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <title>Tehnoezh</title>
+    <link href="css/main.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header" class="default">
+            <div class="container">
+                <div class="header-top">
+                    <div class="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="left-container">
+                        <div class="languages">
+                            <select class="select">
+                                <option>Рус</option>
+                                <option>Укр</option>
+                            </select>
+                            <!--<a href="" class="languages-link">Рус</a>-->
+                            <!--<div class="dropdown">-->
+                                <!--<ul class="languages-list">-->
+                                    <!--<li><a href="">Рус</a></li>-->
+                                    <!--<li><a href="">Укр</a></li>-->
+                                <!--</ul>-->
+                            <!--</div>-->
+                        </div>
+                        <div class="city dropdown-main-container">
+                            <a href="" class="city-link js-dropdown">Харьков</a>
+                            <div class="dropdown-holder city-dropdown">
+                                <div class="dropdown-conteiner">
+                                    <span class="close js-close"></span> 
+                                    <div class="dropdown-title">
+                                        <span>Выберите город</span>
+                                    </div>
+                                    <div class="dropdown-content">
+                                         <form action=""  class="change-city-form">
+                                             <div class="search-input search-city-input">
+                                                 <div class="search-input-holder">
+                                                     <input type="text" placeholder="Поиск города" class="input js-autocomplete ">
+                                                 </div>
+                                                 <span class="close js-clear-input"></span>
+                                                 <button type="submit" class="search-submit"><i class="icon-search"></i></button>
+                                             </div>
+                                             <div class="change-city-items">  
+                                                 <div class="change-city-item"> 
+                                                     <span class="change-city-name city-name-active">Харьков</span> 
+                                                 </div>
+                                                 <div class="change-city-item"> 
+                                                     <span class="change-city-name">Киев</span> 
+                                                 </div>
+                                                 <div class="change-city-item"> 
+                                                     <span class="change-city-name">Одесса</span> 
+                                                 </div>
+                                                 <div class="change-city-item"> 
+                                                     <span class="change-city-name">Винница</span> 
+                                                 </div>
+                                                 <div class="change-city-item"> 
+                                                     <span class="change-city-name">Днепр</span> 
+                                                 </div>
+                                                 <div class="change-city-item"> 
+                                                     <span class="change-city-name">Запорожье</span> 
+                                                 </div>
+                                                 <div class="change-city-item"> 
+                                                     <span class="change-city-name">Чернигов</span> 
+                                                 </div>
+                                                 <div class="change-city-item"> 
+                                                     <span class="change-city-name">Луцк</span> 
+                                                 </div>
+                                                 <div class="change-city-item"> 
+                                                     <span class="change-city-name">Львов</span> 
+                                                 </div>
+                                             </div>
+                                         </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-top-menu">
+                        <ul>
+                            <li><a href="">Sitemap</a></li>
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Блог</a></li>
+                            <li><a href="">Mагазины</a></li>
+                            <li><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="callback dropdown-main-container">
+                        <div class="callback-phone">
+                            <i class="ic-callback"></i>
+                            <a href="tel:0800755754">
+                                <span class="callback-num">0 800 755 754</span>
+                            </a>
+                        </div>
+                        <a href="" class="callback-link js-dropdown">Заказать звонок</a>
+                        <div class="callback-dropdown">
+                            <div class="callback-dropdown-holder dropdown-holder">
+                                <div class="dropdown-conteiner">
+                                <span class="close"></span>
+                                <div class="form-box">
+                                    <div class="callback-title dropdown-title"><span>Заказать звонок</span></div>
+                                    <form action="" class="form_validate">
+                                        <div class="row">
+                                            <div class="input-holder field">
+                                                <input type="text" data-validate="required-name" class="input form-control">
+                                                <label class="label-input">Имя</label>
+                                                <span class="error-text">Имя введено неверно.</span>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-holder field">
+                                                <input type="text" data-validate="required-number" class="input validate_phone form-control">
+                                                <label class="label-input">Телефон</label>
+                                                <span class="error-text">Телефон введен неверно. Проверьте правильность ввода.</span>
+                                            </div>
+                                        </div>
+                                        <div class="row submit-holder">
+                                            <input type="submit" class="btn btn-submit" value="Отправить">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="thx-box">
+                                    <!-- <div class="thx-today">
+                                        <div class="callback-title dropdown-title"><span>Мы уже бежим к телефону!</span></div>
+                                        <i class="icon-statrup"></i>
+                                    </div> -->
+                                     <div class="thx-tomorrow">
+                                        <div class="callback-title dropdown-title"><span>К сожалению, сегодня мы уже разошлись по домам!</span></div>
+                                        <p>Но завтра мы обязательно вас наберем. До связи.</p>
+                                        <i class="icon-moon"></i>
+                                    </div>    
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="usd">USD 26.45</div>
+                    <div class="user-panel">
+                        <div class="user-login">
+                            <a href="" data-openmodal="modals/login.html" class="link user-link"><i class="icon-login"></i></a>
+                        </div>
+                        <div class="favorite">
+                            <a href="" class="link favorite-link"  data-openmodal="modals/favorites-login.html">
+                                <i class="icon-favorite"></i>
+                                <span class="bubble">1</span>
+                            </a>
+                        </div>
+                        <div class="comparing">
+                            <a href="" class="link comparing-link">
+                                <i class="icon-comparing"></i>
+                                <span class="bubble">23</span>
+                            </a>
+                        </div>
+                        <div class="basket">
+                            <a href="" class="link basket-link" data-openmodal="modals/basket.html">
+                                <i class="icon-basket"></i>
+                                <span class="bubble">99</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-panel">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.svg" alt="tehnoez">
+                        </a>
+                    </div>
+                    <div class="menu-section">
+                        <ul class="menu">
+                            <li class="">
+                                <a href="/catalog.html">Apple</a>
+                                <div class="menu-dropdown">
+                                    <div class="menu-row">
+                                        <div class="menu-col-5">
+                                            <div class="menu-title">
+                                                <a href="">iPhone</a>
+                                            </div>
+                                            <div class="menu-box">
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu01.jpg" alt="iPhone X">
+                                                        </span>
+                                                        <span class="item-name">iPhone X</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu02.jpg" alt="iPhone 8">
+                                                        </span>
+                                                        <span class="item-name">iPhone 8</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu03.jpg" alt="iPhone 8 Plus">
+                                                        </span>
+                                                        <span class="item-name">iPhone 8 Plus</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu04.jpg" alt="iPhone 7">
+                                                        </span>
+                                                        <span class="item-name">iPhone 7</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu04.jpg" alt="iPhone 7 Plus">
+                                                        </span>
+                                                        <span class="item-name">iPhone 7 Plus</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu05.jpg" alt="iPhone 6S">
+                                                        </span>
+                                                        <span class="item-name">iPhone 6S</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu05.jpg" alt="iPhone 6S Plus">
+                                                        </span>
+                                                        <span class="item-name">iPhone 6S Plus</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu05.jpg" alt="iPhone 6">
+                                                        </span>
+                                                        <span class="item-name">iPhone 6</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu05.jpg" alt="iPhone 5S">
+                                                        </span>
+                                                        <span class="item-name">iPhone 5S</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu05.jpg" alt="iPhone SE">
+                                                        </span>
+                                                        <span class="item-name">iPhone SE</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-col-3">
+                                            <div class="menu-title">
+                                                <a href="">Mac</a>
+                                            </div>
+                                            <div class="menu-box">
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu10.jpg" alt="Macbook">
+                                                        </span>
+                                                        <span class="item-name">Macbook</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu11.jpg" alt="Macbook Pro">
+                                                        </span>
+                                                        <span class="item-name">Macbook Pro</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu10.jpg" alt="Macbook Air">
+                                                        </span>
+                                                        <span class="item-name">Macbook Air</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu12.jpg" alt="iMac">
+                                                        </span>
+                                                        <span class="item-name">iMac</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu13.jpg" alt="Mac Pro">
+                                                        </span>
+                                                        <span class="item-name">Mac Pro</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu14.jpg" alt="Mac Mini">
+                                                        </span>
+                                                        <span class="item-name">Mac Mini</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-col-3">
+                                            <div class="menu-title">
+                                                <a href="">Гаджеты</a>
+                                            </div>
+                                            <div class="menu-box">
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu06.jpg" alt="product">
+                                                        </span>
+                                                        <span class="item-name">Apple Watch</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu07.jpg" alt="product">
+                                                        </span>
+                                                        <span class="item-name">HomePod</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu08.jpg" alt="product">
+                                                        </span>
+                                                        <span class="item-name">Apple TV</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu09.jpg" alt="product">
+                                                        </span>
+                                                        <span class="item-name">iPad</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu09.jpg" alt="product">
+                                                        </span>
+                                                        <span class="item-name">iPod</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-row">
+                                        <div class="menu-col-5">
+                                            <div class="menu-title">
+                                                <a href="">Все для Apple</a>
+                                            </div>
+                                            <div class="menu-box">
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu15.jpg" alt="Magic mouse">
+                                                        </span>
+                                                        <span class="item-name">Magic mouse</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu16.jpg" alt="Apple Pencil">
+                                                        </span>
+                                                        <span class="item-name">Apple Pencil</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu17.jpg" alt="Trackpad">
+                                                        </span>
+                                                        <span class="item-name">Trackpad</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/img-menu18.jpg" alt="Клавиатура">
+                                                        </span>
+                                                        <span class="item-name">Клавиатура</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box more">
+                                                    <a href="">
+                                                        <span class="img"></span>
+                                                        <span class="item-name">Еще</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menu-col-5">
+                                            <div class="menu-title">
+                                                <a href="">&nbsp;</a>
+                                            </div>
+                                            <div class="menu-box">
+                                                <div class="menu-item-box menu-category">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/ic-apple.png" alt="Б/У Apple">
+                                                        </span>
+                                                        <span class="item-name">Б/У Apple</span>
+                                                    </a>
+                                                </div>
+                                                <div class="menu-item-box menu-category">
+                                                    <a href="">
+                                                        <span class="img">
+                                                            <img src="img/ic-present-card.png" alt="Подарочные карты">
+                                                        </span>
+                                                        <span class="item-name">Подарочные карты</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="">Все для Apple</a></li>
+                            <li><a href="">Б/У Apple</a></li>
+                            <li><a href="">Гаджеты</a></li>
+                            <li class="sale-link"><a href="">Sale</a></li>
+                            <li class="discount-link"><a href="">Акции</a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <div class="search-holder">
+                                <div class="search-input">
+                                    <div class="search-input-holder">
+                                        <input type="text" placeholder="Поиск" class="input" id="search-input">
+                                    </div>
+                                    <span class="close js-clear-input"></span>
+                                    <span class="search-back"></span>
+                                    <button type="submit" class="search-submit"><i class="icon-search"></i></button>
+                                    <span class="search-mobile-icon js-search-btn"><i class="icon-search"></i></span>
+                                </div>
+                                <!-- result search -->
+                                <div class="title-search-result">
+                                    <div class="bx_searche">
+                                        <div class="search-result-main-info">
+                                            <div class="search-result-category-holder mCustomScroll">
+                                                <div class="bx_item_block all_result">
+                                                    <div class="total_result_title">
+                                                        <span>В категориях</span>
+                                                    </div>
+                                                    <div class="total_result_categori-items ">
+                                                        <div class="total_result_categori-item">
+                                                            <a href="#" class="total_result_categori-link">Macbook 12</a>
+                                                        </div>
+                                                        <div class="total_result_categori-item">
+                                                            <a href="#" class="total_result_categori-link">Macbook Pro </a>
+                                                        </div>
+                                                        <div class="total_result_categori-item">
+                                                            <a href="#" class="total_result_categori-link">Macbook Air</a>
+                                                        </div>                                                
+                                                    </div>                                  
+                                                </div>
+                                            </div>                                
+                                            <div class="item_block_holder mCustomScroll">
+                                                <div class="bx_item_block">
+                                                    <div class="bx_img_element">
+                                                        <a href="#">
+                                                            <span class="bx_image" style="background-image: url('img/search_img3.png')"></span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="bx_item_element">
+                                                        <div class="info_product_holder">
+                                                            <span class="code">YU78Y7M6</span>
+                                                            <a href="#" class="product_name"><span> Apple MacBook </span> Pro Retina Touch Bar 15 256Gb Touch Bar Space Gray (MPTR2) 2017</a>                                            							
+                                                        </div>	
+                                                        <div class="info_price_holder">							
+                                                            <div class="bx_price_ua">28 099 грн</div>
+                                                            <div class="bx_price_usd">$1 047</div>
+                                                        </div>
+                                                        <div class="buy_holder">
+                                                            <a class="buy_btn btn" href="#"><i class="icon-basket_blue"></i></a>			
+                                                        </div>			
+                                                    </div>                                    
+                                                </div>
+                                                <div class="bx_item_block">
+                                                    <div class="bx_img_element">
+                                                        <a href="#">
+                                                            <span class="bx_image" style="background-image: url('img/search_img1.png')"></span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="bx_item_element">
+                                                        <div class="info_product_holder">
+                                                            <span class="code">YU78Y7M6</span>
+                                                            <a href="#" class="product_name"><span> Apple MacBook </span> Pro Retina Touch Bar 15 256Gb Touch Bar Space Gray (MPTR2) 2017</a>                                            							
+                                                        </div>	
+                                                        <div class="info_price_holder">							
+                                                            <div class="bx_price_ua">32 600 грн</div>
+                                                            <div class="bx_price_usd">$1 247</div>
+                                                        </div>
+                                                        <div class="buy_holder">
+                                                            <a class="buy_btn btn" href="#"><i class="icon-basket_blue"></i></a>			
+                                                        </div>			
+                                                    </div>                                    
+                                                </div>    
+                                                <div class="bx_item_block">
+                                                    <div class="bx_img_element">
+                                                        <a href="#">
+                                                            <span class="bx_image" style="background-image: url('img/search_img2.png')"></span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="bx_item_element">
+                                                        <div class="info_product_holder">
+                                                            <span class="code">YU78Y7M6</span>
+                                                            <a href="#" class="product_name"><span> Apple MacBook </span> Pro Retina Touch Bar 15 256Gb Touch Bar Space Gray (MPTR2) 2017</a>                                            							
+                                                        </div>	
+                                                        <div class="info_price_holder">							
+                                                            <div class="bx_price_ua">41 590 грн</div>
+                                                            <div class="bx_price_usd">$1 785</div>
+                                                        </div>
+                                                        <div class="buy_holder">
+                                                            <a class="buy_btn btn" href="#"><i class="icon-basket_blue"></i></a>			
+                                                        </div>			
+                                                    </div>                                    
+                                                </div>    
+                                                <div class="bx_item_block">
+                                                    <div class="bx_img_element">
+                                                        <a href="#">
+                                                            <span class="bx_image" style="background-image: url('img/search_img2.png')"></span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="bx_item_element">
+                                                        <div class="info_product_holder">
+                                                            <span class="code">YU78Y7M6</span>
+                                                            <a href="#" class="product_name"><span> Apple MacBook </span> Pro Retina Touch Bar 15 256Gb Touch Bar Space Gray (MPTR2) 2017</a>                                            							
+                                                        </div>	
+                                                        <div class="info_price_holder">							
+                                                            <div class="bx_price_ua">28 099 грн</div>
+                                                            <div class="bx_price_usd">$1 047</div>
+                                                        </div>
+                                                        <div class="buy_holder">
+                                                            <a class="buy_btn btn" href="#"><i class="icon-basket_blue"></i></a>			
+                                                        </div>			
+                                                    </div>                                    
+                                                </div>        
+                                            </div>                               
+                                        </div>
+                                        <div class="search-result-total-info">
+                                            <span class="search-result-text">Найдено 35 товаров</span>
+                                            <a href="#" class="search-result-link">Показать все</a>
+                                        </div>
+                                    </div>
+                                    <div class="bx_searche no_result">
+                                        <div class="search-result-main-info">
+                                            <span class="search_no_res_sub_info">По вашему запросу ничего не найдено</span>
+                                            <span class="search_no_res_main_info">Попробуйте изменить поисковый запрос</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end result search -->  
+                        </div>              
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-menu-dropdown">
+                <!--<div class="login-row">-->
+                    <!--<a href="" class="sign-in-link"><i class="ic-sign-in"></i><span>Войти</span></a>-->
+                    <!--<div class="usd">USD 28.45</div>-->
+                <!--</div>-->
+                <div class="mobile-menu-dropdown-content">
+                <!-- authorized -->
+                <div class="login-row">
+                        <a href="" data-openmodal="modals/login.html" class="login-link"><i class="ic-login">К</i><span>Константин</span></a>
+                        <div class="favorite">
+                            <a href="" class="link favorite-link active">
+                                <i class="icon-favorite"></i>
+                                <span class="bubble">3</span>
+                            </a>
+                        </div>
+                        <div class="usd">USD 28.45</div>
+                    </div>
+                    <!-- authorized end -->
+            
+                    <div class="mobile-menu-holder">
+                        <div class="mobile-multimenu">
+                            <ul class="menu mobile_menu">
+                                <li class="submenu_section">
+                                    <a href="javascript:void(0);">Apple</a>
+                                    <ul class="submenu">
+                                        <li class="back">Apple</li>
+                                        <li><a href="">iPhone</a></li>
+                                        <li>
+                                            <a href="javascript:void(0);">Mac -></a>
+                                            <ul class="submenu">
+                                                <li class="back">Mac</li>
+                                                <li><a href="">1</a></li>
+                                                <li><a href="">2</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="">Гаджеты</a></li>
+                                        <li><a href="">Все для Apple</a></li>
+                                        <li><a href="">Apple Б/У</a></li>
+                                        <li><a href="">Подарочные карты</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Все для Apple</a></li>
+                                <li><a href="">Б/У Apple</a></li>
+                                <li><a href="">Гаджеты</a></li>
+                                <li class="sale-link"><a href="">Sale</a></li>
+                                <li class="discount-link"><a href="">Акции</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-top-menu">
+                            <ul>
+                                <li><a href="">Sitemap</a></li>
+                                <li><a href="">О нас</a></li>
+                                <li><a href="">Блог</a></li>
+                                <li><a href="">Mагазины</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="city-row">
+                        <div class="languages">
+                            <ul>
+                                <li class="active"><a href="">Рус</a></li>
+                                <li><a href="">Укр</a></li>
+                            </ul>
+                        </div>
+                        <div class="city">
+                            <span class="city-title">Город:</span>
+                            <a href="" class="city-link js-open-city">Харьков</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile-menu-dropdown-city">
+                    <div class="dropdown-holder-mob city-dropdown-mob">
+                        <div class="dropdown-fixed-content-mob">
+                             <div class="dropdown-title-mob">
+                                <span>Выбор города</span>
+                            </div>
+                            <div class="dropdown-form-mob">
+                                <form action=""  class="change-city-form">
+                                    <div class="search-input search-city-input">
+                                        <div class="search-input-holder">
+                                            <input type="text" placeholder="Поиск города" class="input js-autocomplete ">
+                                        </div>
+                                        <span class="close js-clear-input"></span>
+                                        <button type="submit" class="search-submit"><i class="icon-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="dropdown-content-mob">
+                             <div class="change-city-items-mob">
+                                <div class="change-city-item-mob">
+                                    <span class="change-city-name city-name-active">Харьков</span>
+                                </div>
+                                <div class="change-city-item-mob">
+                                    <span class="change-city-name">Киев</span>
+                                </div>
+                                <div class="change-city-item-mob">
+                                    <span class="change-city-name">Одесса</span>
+                                </div>
+                                <div class="change-city-item-mob">
+                                    <span class="change-city-name">Винница</span>
+                                </div>
+                                <div class="change-city-item-mob">
+                                    <span class="change-city-name">Днепр</span>
+                                </div>
+                                <div class="change-city-item-mob">
+                                    <span class="change-city-name">Запорожье</span>
+                                </div>
+                                <div class="change-city-item-mob">
+                                    <span class="change-city-name">Чернигов</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    <main class="main">
+        <div class="personal-page">
+            <div class="container">
+                <div class="content">
+                    <div class="personal-page-holder">
+                        <div class="col-holder personal-menu-holder bg-white border-blue">
+                            <div class="top-info">
+                                <div class="personal-page-title">
+                                    <span>Мой кабинет</span>
+                                    <span class="link cancel">Выйти</span>
+                                </div>
+                                <div class="personal-info">
+                                    <div class="personal-photo">
+                                        <span>B</span>
+                                    </div>
+                                    <div class="personal-name">
+                                        <span class="link link-name">Виктор</span>
+                                        <span class="link cancel">Выйти</span>
+                                    </div>
+                                    <span class="close js-close-pers-menu"></span>
+                                </div>
+                            </div>
+                            <nav class="personal-menu">
+                                <span class="personal-menu-page js-page-name">Просмотренные</span>
+                                <ul class="personal-menu-items">
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Профиль</a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Заказы</a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Адреса</a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Избранное</a></li>
+                                    <li class="personal-menu-item active"><span class="personal-menu-item-link">Просмотренные</span><span
+                                            class="personal-menu-item-count">18</span></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Отзывы</a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Корзина</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="personal-main-content bg-white">
+                            <div class="title-holder content-title-holder">
+                                <div class="title-h2">Вы просмотрели 14 товаров</div>
+                                <a href="#" class="clear-list">Очистить список</a>
+                            </div>
+                            <div class="catalog-list">
+                                <!-- product item -->
+                                <div class="product-item">
+                                        <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                                        <a class="comparing-link" href=""><i class="icon-comparing"></i></a>
+                                        <div class="img images-list">
+                                            <div class="slide">
+                                                <a href=""><img src="img/fav01.jpg" alt="product"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href=""><img src="img/fav02.jpg" alt="product"></a>
+                                            </div>
+                                            <div class="slide">
+                                                <a href=""><img src="img/fav03.jpg" alt="product"></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-description">
+                                            <div class="code"><span>YU78Y7M6</span></div>
+                                            <div class="product-name">
+                                                <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with
+                                                    Touch
+                                                    Bar, 2017, MPXX2</a>
+                                            </div>
+                                            <div class="btn-buy_row">
+                                                <div class="price-block">
+                                                    <div class="price-box">
+                                                        <div class="price-old"><span>46 999 грн</span></div>
+                                                        <div class="price"><span>44 999 грн </span></div>
+                                                    </div>
+                                                    <div class="price-usd">$1 619</div>
+                                                </div>
+                                                <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                            </div>
+                                        </div>
+                                </div>
+                                <!-- product item ending -->
+                                <!-- product item -->
+                                <div class="product-item">
+                                    <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                                    <a class="comparing-link" href=""><i class="icon-comparing"></i></a>
+                                    <div class="img">
+                                        <a href=""><img src="img/fav02.jpg" alt="product"></a>
+                                    </div>
+                                    <div class="product-description">
+                                        <div class="code"><span>YU78Y7M6</span></div>
+                                        <div class="product-name">
+                                            <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch
+                                                Bar, 2017, MPXX2</a>
+                                        </div>
+                                        <div class="btn-buy_row">
+                                            <div class="price-block">
+                                                <div class="price-box">
+                                                    <div class="price-old"><span></span></div>
+                                                    <div class="price"><span>69 199 грн </span></div>
+                                                </div>
+                                                <div class="price-usd">$2 159</div>
+                                            </div>
+                                            <a class="buy-btn_mini in-basket" href="#"><i class="icon-basket_blue"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item ending -->
+                                <!-- product item -->
+                                <div class="product-item">
+                                    <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                                    <a class="comparing-link" href=""><i class="icon-comparing"></i></a>
+                                    <div class="img">
+                                        <a href=""><img src="img/fav03.jpg" alt="product"></a>
+                                    </div>
+                                    <div class="product-description">
+                                        <div class="code"><span>YU78Y7M6</span></div>
+                                        <div class="product-name">
+                                            <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch
+                                                Bar, 2017, MPXX2</a>
+                                        </div>
+                                        <div class="btn-buy_row">
+                                            <div class="price-block">
+                                                <div class="price-box">
+                                                    <div class="price-old"><span>31 999 грн</span></div>
+                                                    <div class="price"><span>28 099 грн </span></div>
+                                                </div>
+                                                <div class="price-usd">$1 045</div>
+                                            </div>
+                                            <div class="availability not-available">Нет в наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item ending -->
+                                <!-- product item -->
+                                <div class="product-item">
+                                    <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                                    <a class="comparing-link" href=""><i class="icon-comparing"></i></a>
+                                    <div class="img">
+                                        <a href=""><img src="img/fav04.jpg" alt="product"></a>
+                                    </div>
+                                    <div class="product-description">
+                                        <div class="code"><span>YU78Y7M6</span></div>
+                                        <div class="product-name">
+                                            <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                        </div>
+                                        <div class="btn-buy_row">
+                                            <div class="price-block">
+                                                <div class="price-box">
+                                                    <div class="price-old"><span>6 999 грн</span></div>
+                                                    <div class="price"><span>44 999 грн </span></div>
+                                                </div>
+                                                <div class="price-usd">$1 619</div>
+                                            </div>
+                                            <div class="availability not-available">Нет в наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item ending -->
+                                <!-- product item -->
+                                <div class="product-item">
+                                    <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                                    <a class="comparing-link" href=""><i class="icon-comparing"></i></a>
+                                    <div class="img">
+                                        <a href=""><img src="img/fav04.jpg" alt="product"></a>
+                                    </div>
+                                    <div class="product-description">
+                                        <div class="code"><span>YU78Y7M6</span></div>
+                                        <div class="product-name">
+                                            <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                        </div>
+                                        <div class="btn-buy_row">
+                                            <div class="price-block">
+                                                <div class="price-box">
+                                                    <div class="price-old"><span>6 999 грн</span></div>
+                                                    <div class="price"><span>44 999 грн </span></div>
+                                                </div>
+                                                <div class="price-usd">$1 619</div>
+                                            </div>
+                                            <div class="availability not-available">Нет в наличии</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- product item ending -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subs-section">
+            <div class="container">
+                <div class="subs-holder form-with-success-holder">
+                    <div class="title-holder">
+                        <div class="title-h2">Подпишись на рассылку</div>
+                        <div class="title-note-row">и получи 100 грн на покупку</div>
+                    </div>
+                    <div class="section-container">
+                        <form action="" class="subs-form form_validate form-with-success">
+                            <div class="subs-box">
+                                <div class="input-holder field">
+                                    <input type="text" data-validate="required-email" class="input form-control">
+                                    <label class="label-input">Ваш e-mail</label>
+                                </div>
+                                <button type="submit" class="btn btn-submit">
+                                    <span>Подписаться</span>
+                                </button>
+                            </div>
+                        </form> 
+                        <div class="form-with-success-answer">
+                            <div class="title-holder">
+                                <div class="title-h2">Спасибо! Вы подписались на рассылку! </div>
+                                <div class="title-note-row">На указанный e-mail <span class="link">valentin@gmail.com</span> мы отправили промокод на 100 грн к любой покупке!</div>
+                            </div>                    
+                        </div>                   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="columns">
+                    <div class="col">
+                        <div class="footer-title">Компания</div>
+                        <ul class="footer-menu">
+                            <li><a href="">Карьера</a></li>
+                            <li><a href="">О нас</a></li>
+                            <li><a href="">Контакты</a></li>
+                            <li><a href="">Копроративным клиентам</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="footer-title">Информация</div>
+                        <ul class="footer-menu">
+                            <li><a href="">Доставка и оплата</a></li>
+                            <li><a href="">Гарантия и сервис</a></li>
+                            <li><a href="">Блог</a></li>
+                            <li><a href="">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="footer-title">Выгодно</div>
+                        <ul class="footer-menu">
+                            <li><a href="">Акции</a></li>
+                            <li><a href="">Топ продаж</a></li>
+                            <li><a href="">Техобмен</a></li>
+                            <li><a href="">Sale</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="footer-consultation">
+                        <span class="footer-consultation-title">Консультация по телефонам:</span>
+                        <div class="phones-row">
+                            <a href="tel:044755754" class="phone mobile-hidden">044 755 754</a>
+                            <a href="tel:0800755754" class="phone">0 800 755 754</a>
+                        </div>
+                        <div class="footer-time-row">
+                            <div class="footer-time-item">
+                                <span class="time-title">Пн - Пт:</span>
+                                <span class="time-value">с 9 до 21</span>
+                            </div>
+                            <div class="footer-time-item">
+                                <span class="time-title">Сб - Вс:</span>
+                                <span class="time-value">с 10 до 18</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-contacts">
+                        <!--<div class="mail-box">-->
+                        <!--<span>Ваши предложения:</span>-->
+                        <!--<a href="mailto:feedback@tehnoezh.ua">feedback@tehnoezh.ua</a>-->
+                        <!--</div>-->
+                        <div class="footer-socials">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                            <a href=""><i class="fab fa-youtube"></i></a>
+                            <a href=""><i class="far fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-box">
+                <div class="columns">
+                    <div class="col-1">
+                        <div class="copyright">
+                            <span>&copy; tehnoezh.ua</span>
+                        </div>
+                        <div class="security">
+                            <span>Политика конфиденциальности</span>
+                        </div>
+                        <div class="payment-icons">
+                            <span class="icon">
+                                <i class="ic-visa"></i>
+                            </span>
+                            <span class="icon">
+                                <i class="ic-mc"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="awards">
+                        <a href="">
+                            <i class="ic-awards"></i>
+                        </a>
+                        <span>Награды Retail Awards 2017 <br>и «Лучший сервис»</span>
+                    </div>
+                    <!--<div class="developing-info">-->
+                    <!--<span>Разработано с любовью </span>-->
+                    <!--<span>в <a href="https://turumburum.ua" class="ic-turum"></a></span>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <span class="back-to-top"><i class="ic-up"></i></span>
+    <div class="bg"></div>
+    <!-- modal container -->
+    <div class="modal fade" id="modal-main" role="dialog" tabindex="-1">
+        <div class="modal-dialog"></div>
+    </div>
+    <!--<script src="js/libs/jquery-1.12.0.min.js"></script>-->
+    <script src="js/libs-min.js"></script>
+    <script src="js/main-min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0DxMMYRhqIFoFb4io4uzMqOk29kSaNso&callback=initMap">
+    </script>
+</body>
+
+</html>

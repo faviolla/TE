@@ -1,0 +1,57 @@
+<div class="modal-content modal-content--pre-order">
+    <a href="#" class="close-modal" data-dismiss="modal"></a>
+    <div class="modal-body modal-body--pre-order">
+        <div class="modal-form-wrap">
+            <div class="modal-form-holder">
+                <div class="form__modal">
+                    <div class="modal-form">
+                        <span class="modal-title">Предзаказ</span>
+                        <span class="modal-text">Вы тоже заинтересовались этим замечательным гаджетом? 
+                                Оставьте свои контактные данные 
+                                и мы свяжемся с вами, как только товар появится на нашем складе.</span>
+                        <form class="form_validate form-with-thx" method="POST" id="pre-order-form">
+                            <div class="row">
+                                <div class="input-holder field">
+                                    <input type="text" class="input form-control js-input"  data-validate="required-name">
+                                    <span class="label-input">Имя</span>
+                                    <span class="error-text">Введите имя</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-holder field">
+                                    <input type="text" class="input form-control js-input validate_phone" data-validate="required-number">
+                                    <span class="label-input">Телефон</span>
+                                    <span class="error-text">Данные введены некорректно</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-holder field">
+                                    <input type="email" class="input form-control js-input" data-validate="required-email">
+                                    <span class="label-input">E-mail</span>
+                                    <span class="error-text">Данные введены некорректно</span>
+                                </div>
+                            </div>
+                            <div class="row submit-holder">
+                                <input type="submit" class="btn btn-submit" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="success-send-form">
+                        <div class="row">
+                            <div class="modal-title">
+                                <span>Ваша заявка принята</span>
+                            </div>					
+                        </div>
+                        <div class="row">						
+                            <span class="modal-text">Вы оформили предзаказ. Мы обязательно свяжемся с вами в скором времени</span>							
+                        </div>	
+                        <div class="row row-centered">                           
+                           <i class="ic-success"></i>
+                        </div>				
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
