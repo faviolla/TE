@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+//= templates/head.html
+
+<body class="main-page">
+    //= templates/header.html
+    <main class="main">
+        <div class="personal-page">
+            <div class="container">
+                <div class="content">
+                    <div class="personal-page-holder">
+                        <div class="col-holder personal-menu-holder bg-white border-blue">
+                            <div class="top-info">
+                                <div class="personal-page-title">
+                                    <span>Мой кабинет</span>
+                                    <span class="link cancel">Выйти</span>
+                                </div>
+                                <div class="personal-info">
+                                    <div class="personal-photo">
+                                        <span>B</span>
+                                    </div>
+                                    <div class="personal-name">
+                                        <span class="link link-name">Виктор</span>
+                                        <span class="link cancel">Выйти</span>
+                                    </div>
+                                    <span class="close js-close-pers-menu"></span>
+                                </div>
+                            </div>
+                            <nav class="personal-menu">
+                                <span class="personal-menu-page js-page-name">Адреса</span>
+                                <ul class="personal-menu-items">
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Профиль</a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Заказы</a></li>
+                                    <li class="personal-menu-item active"><span class="personal-menu-item-link">Адреса
+                                        </span></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Избранное</a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Просмотренные</a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Отзывы</a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Корзина</a></li>
+                                </ul>
+                            </nav>
+                        </div>                       
+                        <div class="personal-main-content bg-white">
+                                <div class="addr-myaddr-conteiner">
+                            <div class="title-h2">Мои адреса <span class="subtitle">Для доставки курьером</span></div>                           
+                            <div class="addr-add-holder bg-grey addr-added">
+                                <div class="addr-holder">
+                                    <span class="addr-text">Харьков, Бульвар Грицевца, 17</span>
+                                    <span class="addr-default">По умолчанию</span>
+                                </div>
+                                <div class="addr-btn">
+                                    <a href="#" class="addr-cancel-link"><i class="ic-addr-cancel"></i></a>
+                                    <a href="#" class="addr-edit-link"><i class="ic-addr-edit"></i></a>
+                                </div>
+                            </div>
+                            <div class="addr-add-holder bg-grey addr-added addr-make-default-holder">
+                                <div class="addr-holder">
+                                    <span class="addr-text">Харьков, Бульвар Грицевца, 17</span>
+                                    <span class="addr-make-default">Сделать по умолчанию</span>
+                                </div>
+                                <div class="addr-btn">
+                                    <a href="#" class="addr-cancel-link"><i class="ic-addr-cancel"></i></a>
+                                    <a href="#" class="addr-edit-link"><i class="ic-addr-edit"></i></a>
+                                </div>
+                            </div>
+                            <div class="addr-add-holder bg-grey addr-new">
+                                <form class="form_validate addr-new-form">
+                                    <div class="addr-holder">
+                                        <div class="addr-conteiner-input">
+                                            <div class="input-holder field">
+                                                <input type="text" data-validate="required-name" class="input form-control">
+                                                <label class="label-input">Город</label>
+                                                <span class="error-text">Имя введено неверно.</span>
+                                            </div>
+                                            <div class="input-holder field">
+                                                <input type="text" data-validate="required-name" class="input form-control">
+                                                <label class="label-input">Улица</label>
+                                                <span class="error-text">Имя введено неверно.</span>
+                                            </div>
+                                            <div class="input-holder field field-sm">
+                                                <input type="text" data-validate="required-name" class="input form-control">
+                                                <label class="label-input">Дом</label>
+                                                <span class="error-text">Имя введено неверно.</span>
+                                            </div>
+                                            <div class="input-holder field field-sm">
+                                                <input type="text" class="input form-control">
+                                                <label class="label-input">Квартира</label>
+                                            </div>
+                                        </div>
+                                        <!-- <span class="addr-make-default">Сделать по умолчанию</span> -->
+                                    </div>
+                                    <div class="addr-btn">
+                                        <label>
+                                            <button type="submit" class="btn-icon"><i class="ic-addr-save"></i></button>
+                                        </label>
+                                        <a href="#" class="addr-edit-link"><i class="ic-addr-edit"></i></a>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="addr-add active">
+                                <span class="subtitle">Добавьте свой адрес для курьерской доставки и вы сможете его
+                                        быстро выбрать при оформлении следующего заказа</span>
+                                <div class="addr-add-holder bg-grey">
+                                    <a href="#" class="addr-add-link js-addr-add">+ Добавить адрес</a>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="addr-newpost-conteiner">
+                                <div class="title-h2">Новая почта</div>                               
+                                <div class="addr-add-holder bg-grey addr-added">
+                                    <div class="addr-holder">
+                                        <span class="addr-text">Харьков, Бульвар Грицевца, 17 
+                                            <span class="addr-text-dopinfo">(до30 кг)</span>
+                                        </span>
+                                        <span class="addr-default">По умолчанию</span>
+                                    </div>
+                                    <div class="addr-btn">
+                                        <a href="#" class="addr-cancel-link"><i class="ic-addr-cancel"></i></a>
+                                        <a href="#" class="addr-edit-link"><i class="ic-addr-edit"></i></a>
+                                    </div>
+                                </div>
+                                <div class="addr-add-holder bg-grey addr-added addr-make-default-holder">
+                                    <div class="addr-holder">
+                                        <span class="addr-text">Харьков, ул. Асхарова, 
+                                            <span class="addr-text-dopinfo">(до 30 кг)</span>
+                                        </span>
+                                        <span class="addr-make-default">Сделать по умолчанию</span>
+                                    </div>
+                                    <div class="addr-btn">
+                                        <a href="#" class="addr-cancel-link"><i class="ic-addr-cancel"></i></a>
+                                        <a href="#" class="addr-edit-link"><i class="ic-addr-edit"></i></a>
+                                    </div>
+                                </div>
+                                <div class="addr-add-holder bg-grey addr-new">
+                                    <form class="form_validate addr-new-form">
+                                        <div class="addr-holder conteiner-map-holder">
+                                            <div class="addr-conteiner-input">
+                                                <div class="input-holder field">
+                                                    <input type="text" data-validate="required-name" class="input form-control">
+                                                    <label class="label-input">Город</label>
+                                                    <span class="error-text">Имя введено неверно.</span>
+                                                </div>
+                                                <div class="input-holder select-holder">
+                                                    <select class="select select-city " id="select-city"  data-placeholder="Отделение">
+                                                        <option></option>
+                                                        <option>Киев</option>
+                                                        <option>Харьков</option>
+                                                        <option>Львов</option>
+                                                        <option>Днепр</option>
+                                                        <option>Херсон</option>
+                                                        <option>Винница</option>
+                                                        <option>Днепр</option>
+                                                        <option>Херсон</option>
+                                                        <option>Винница</option>
+                                                    </select>
+                                                    <label class="label-select" for="select-city">Отделение</label>
+                                                </div>                                                
+                                                <span class="marker-holder js-toggle-map"><i class="ic-marker"></i><span class="close"></span></span> 
+                                                <div class="col_map toggle-map">
+                                                    <div id="map-1" lat="50.0274050" lng="36.3306380" class="shop_map"></div>
+                                                </div> 
+                                            </div>                                            
+                                        </div>
+                                        <div class="addr-btn">
+                                            <label>
+                                                <button type="submit" class="btn-icon"><i class="ic-addr-save"></i></button>
+                                            </label>
+                                            <a href="#" class="addr-edit-link"><i class="ic-addr-edit"></i></a>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="addr-add active">
+                                    <span class="subtitle">Добавьте свой адрес для курьерской доставки и вы сможете его
+                                            быстро выбрать при оформлении следующего заказа</span>
+                                    <div class="addr-add-holder bg-grey">
+                                        <a href="#" class="addr-add-link js-addr-add">+ Добавить адрес</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        //= templates/subs.html
+    </main>
+    //= templates/footer.html
+</body>
+
+</html>

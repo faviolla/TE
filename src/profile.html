@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+//= templates/head.html
+
+<body class="main-page">
+    //= templates/header.html
+    <main class="main">
+        <div class="personal-page  bg-grey">
+            <div class="container">
+                <div class="content">
+                    <div class="personal-page-holder">
+                        <div class="col-holder personal-menu-holder bg-white border-blue">
+                            <div class="top-info">
+                                <div class="personal-page-title">
+                                    <span>Мой кабинет</span>
+                                    <span class="link cancel">Выйти</span>
+                                </div>
+                                <div class="personal-info">
+                                    <div class="personal-photo">
+                                        <span>B</span>
+                                    </div>
+                                    <div class="personal-name">
+                                        <span class="link link-name">Виктор</span>
+                                        <span class="link cancel">Выйти</span>
+                                    </div>
+                                    <span class="close js-close-pers-menu"></span>
+                                </div>
+                            </div>                            
+                            <nav class="personal-menu">
+                                <span class="personal-menu-page js-page-name">Профиль</span>
+                                <ul class="personal-menu-items">
+                                    <li class="personal-menu-item active"><span class="personal-menu-item-link">Профиль</span></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Заказы</a><span
+                                            class="personal-menu-item-count">2</span></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Адреса
+                                        </a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Избранное</a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Просмотренное</a><span
+                                            class="personal-menu-item-count">18</span></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Отзывы</a></li>
+                                    <li class="personal-menu-item"><a href="#" class="personal-menu-item-link">Корзина</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- <div class="mobile-topinfo-holder bg-white border-blue">
+                            <div class="top-info left-holder js-open-personal-menu">                                
+                                <div class="personal-info">
+                                    <div class="personal-photo">
+                                        <span>B</span>
+                                    </div>
+                                    <div class="personal-name">
+                                        <span class="link link-name">Виктор</span>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-holder">
+                                <span>Профиль</span>
+                            </div>
+                        </div> -->
+                        <div class="col-main-holder col-holder bg-white">
+                            <form class="form_validate personal-form">
+                                <div class="personal-page-title">
+                                    <span>Персональные данные</span>
+                                </div>
+                                <div class="row">
+                                    <div class="input-holder field">
+                                        <input type="text" class="input form-control js-input" data-validate="required-name">
+                                        <span class="label-input">Имя</span>
+                                        <span class="error-text">Данные введены некорректно</span>
+                                    </div>
+                                    <div class="input-holder field">
+                                        <input type="text" class="input form-control js-input" data-validate="required-name">
+                                        <span class="label-input">Фамилия</span>
+                                        <span class="error-text">Данные введены некорректно</span>
+                                    </div>
+                                </div>
+                                <div class="row bottom-row">
+                                    <div class="input-holder field">
+                                        <input type="text" data-validate="required-number" class="input validate_phone form-control">
+                                        <span class="label-input">Телефон</span>
+                                        <span class="error-text">Данные введены некорректно</span>
+                                    </div>
+                                    <div class="input-holder field">
+                                        <input type="text" class="input form-control js-input" data-validate="required-email">
+                                        <span class="label-input">E-mail</span>
+                                        <span class="error-text">Данные введены некорректно</span>
+                                    </div>
+                                </div>
+                                <div class="personal-page-title">
+                                    <span>Дата рождения</span>
+                                    <span class="personal-subtitle">Укажите дату рождения и мы вас порадуем скидкой к
+                                        празднику</span>
+                                </div>
+                                <div class="row birthday-row">
+                                    <div class="input-holder field">
+                                        <input type="text" class="input form-control js-input" data-validate="required">
+                                        <span class="label-input">День</span>
+                                        <span class="error-text">Данные введены некорректно</span>
+                                    </div>
+                                    <div class="input-holder field">
+                                        <input type="text" class="input form-control js-input" data-validate="required">
+                                        <span class="label-input">Месяц</span>
+                                        <span class="error-text">Данные введены некорректно</span>
+                                    </div>
+                                    <div class="input-holder field">
+                                        <input type="text" class="input form-control js-input" data-validate="required">
+                                        <span class="label-input">Год</span>
+                                        <span class="error-text">Данные введены некорректно</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <a href="#" class="link">Изменить пароль</a>
+                                </div>
+                                <div class="row submit-holder row-input-holder">
+                                    <input type="submit" class="btn btn-submit " value="Сохранить изменения">
+                                </div>
+                            </form>
+                        </div>
+                        <div class=" col-subs">
+                            <div class="social-holder bg-white col-holder">
+                                <div class="personal-page-subtitle">
+                                    <span>Соцсети</span>
+                                </div>
+                                <span class="text">Привяжите свой профиль соцсетей к личному кабинету для быстрого
+                                    входа в единый
+                                    кабинет</span>
+                                <div class="socials-holder personal-socials-holder">
+                                    <ul class="social-items">
+                                        <li class="social-active"><span class="socials-item facebook-link"><i class="fab fa-facebook-f"></i></span>
+                                            <span class="social-close-ic"><i class="ic-close-social"></i></span></li>
+                                        <!-- <li><a href="#" class="socials-item facebook-link"><i class="fab fa-facebook-f"></i></a></li> -->
+                                        <!-- <li class="social-active"><span class="socials-item twitter-link"><i class="fab fa-twitter"></i></span> <span class="social-close-ic"><i class="ic-close-social"></i></span></li> -->
+                                        <!-- <li><a href="#" class="socials-item twitter-link"><i class="fab fa-twitter"></i></a></li> -->
+                                        <!-- <li class="social-active"><span class="socials-item google-link"><i class="fab fa-google-plus-g"></i></span> <span class="social-close-ic"><i class="ic-close-social"></i></span></li> -->
+                                        <li><a href="#" class="socials-item google-link"><i class="fab fa-google-plus-g"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="subscribe-holder bg-white col-holder">
+                                <div class="personal-page-subtitle">
+                                    <span>Управление рассылкой</span>
+                                </div>
+                                <span class="text">Будь в курсе всех новинок и выгодных предложений от Ежа</span>
+                                <form class="subscribe-form">
+                                    <div class="row">
+                                        <div class="check-holder">
+                                            <label class="label">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="checkbox-dec"></span>
+                                            </label>
+                                        </div>
+                                        <span class="subscribe-text">+38 066 666 66 66 </span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="check-holder">
+                                            <label class="label">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="checkbox-dec"></span>
+                                            </label>
+                                        </div>
+                                        <span class="subscribe-text">valentin@gmail.com</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        //= templates/subs.html
+    </main>
+    //= templates/footer.html
+</body>
+</html>

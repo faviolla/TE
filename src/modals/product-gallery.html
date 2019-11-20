@@ -1,0 +1,159 @@
+<div class="modal-content modal-content--product ">
+	<a href="#" class="close-modal" data-dismiss="modal"></a>
+	<div class="modal-body modal-body--product">
+		<div class="modal-body--product-holder">
+			<div class="product-info-section-top">
+				<div class="product-title-name desktop-view">Apple MacBook Pro Retina Touch Bar 15" 256Gb Touch Bar Space Gray
+					(MPTR2) 2017
+				</div>
+				<div class="price-block-holder">
+					<div class="price-block">
+						<div class="price-box">
+							<div class="price-old"><span>31 999 грн</span></div>
+							<div class="price"><span>28 099 грн </span></div>
+						</div>
+					</div>
+				</div>
+				<div class="main-button-container">
+					<a href="" class="buy-btn btn"><i class="icon-basket_white"></i>
+						<span class="btn-text">Купить</span>
+					</a>
+				</div>
+			</div>
+			<div class="product-item-slider-holder">
+				<div class="product-item-slider-block-popup ">
+					<div class="product-item-slider-images-container js-produc-slider-for slider">
+						<div class="product-item-image">
+							<div class="product-item-image-holder">
+								<img src="img/popup-product.jpg" alt="product">
+							</div>
+						</div>
+						<div class="product-item-image">
+							<div class="product-item-image-holder">
+								<img src="img/img10.jpg" alt="product">
+							</div>
+						</div>
+						<div class="product-item-image">
+							<div class="product-item-image-holder">
+								<img src="img/img09.jpg" alt="product">
+							</div>
+						</div>
+						<div class="product-item-image">
+							<div class="product-item-image-holder">
+								<img src="img/img14.jpg" alt="product">
+							</div>
+						</div>
+						<div class="product-item-image">
+							<div class="product-item-image-holder">
+								<img src="img/img-product01.jpg" alt="product">
+							</div>
+						</div>
+						<div class="product-item-image">
+							<div class="product-item-image-holder">
+								<img src="img/img-product01.jpg" alt="product">
+							</div>
+						</div>
+						<div class="product-item-image">
+							<div class="product-item-image-holder">
+								<img src="img/img14.jpg" alt="product">
+							</div>
+						</div>
+						<div class="product-item-image">
+							<div class="product-item-image-holder">
+								<img src="img/img-product01.jpg" alt="product">
+							</div>
+						</div>
+						<div class="product-item-image">
+							<div class="product-item-image-holder product-item-video-holder">
+								<iframe class="iframe-video" src="https://www.youtube.com/embed/u_l9MmJqoR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="detail-slider-holder-popup">
+					<div class="product-item-slider-controls js-produc-slider-nav">
+						<div class="img-control is-active" data-nav="0">
+							<div class="img-control-holder">
+								<img src="img/popup-product.jpg" alt="product">
+							</div>
+						</div>
+						<div class="img-control" data-nav="1">
+							<div class="img-control-holder">
+								<img src="img/img10.jpg" alt="product">
+							</div>
+						</div>
+						<div class="img-control" data-nav="2">
+							<div class="img-control-holder">
+								<img src="img/img09.jpg" alt="product">
+							</div>
+						</div>
+						<div class="img-control" data-nav="3">
+							<div class="img-control-holder">
+								<img src="img/img14.jpg" alt="product">
+							</div>
+						</div>
+						<div class="img-control" data-nav="4">
+							<div class="img-control-holder">
+								<img src="img/img-product01.jpg" alt="product">
+							</div>
+						</div>
+						<div class="img-control" data-nav="5">
+							<div class="img-control-holder">
+								<img src="img/img-product01.jpg" alt="product">
+							</div>
+						</div>
+						<div class="img-control" data-nav="6">
+							<div class="img-control-holder">
+								<img src="img/img14.jpg" alt="product">
+							</div>
+						</div>
+						<div class="img-control" data-nav="7">
+							<div class="img-control-holder">
+								<img src="img/img-product01.jpg" alt="product">
+							</div>
+						</div>
+						<div class="img-control video-control" data-nav="8">
+							<div class="img-control-holder">
+								<i class="ic-video"></i>
+								<span>Видео</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	jQuery(document).ready(function ($) {
+		var activeItem = $(document).find('.active-prod-img').data('img');
+
+		$('.js-produc-slider-for').not('.slick-initialized').slick({
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true,
+			fade: true,
+			speed: 50,
+			adaptiveHeight: true,
+			infinite: false,			
+			useTransform: true
+		});
+
+		$('.js-produc-slider-for').slick('slickGoTo', activeItem);
+
+		$('.js-produc-slider-for').on('afterChange', function (event, slick, currentSlide) {
+			var currrentNavSlideElem = '.js-produc-slider-nav [data-nav="' + currentSlide + '"]';
+			$('.js-produc-slider-nav .img-control.is-active').removeClass('is-active');
+			$(currrentNavSlideElem).addClass('is-active');
+		});
+
+		$('.js-produc-slider-nav').on('click', '.img-control', function (event) {
+			event.preventDefault();
+			var goToSingleSlide = $(this).data('nav');
+			$('.js-produc-slider-for').slick('slickGoTo', goToSingleSlide);
+		});
+	});
+</script>

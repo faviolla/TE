@@ -1,0 +1,356 @@
+.compare {
+    position: relative;
+    &:after {
+        content:"";
+        position: absolute;
+        left: 0;
+        width: 390px;
+        background: $filterColor;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    .title-h1 {
+        margin-bottom: 0;
+    }
+    .product-tooltip {
+        align-self: center;
+        margin-left: 5px;
+    }
+    &-row {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    &-col {
+        width: 50%;        
+        &-left {
+           width: 333px;
+        }
+        &-right {
+            display: flex;
+            justify-content: space-between;
+            width: calc(100% - 333px);
+            padding-left: 30px;
+            flex-wrap: wrap;
+        }
+    }
+    &-category {
+        &-holder {
+            font-size: 16px;
+        }
+        &-item {
+            position: relative;
+            margin-right: 35px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            &.active {
+                color:$fontColor;
+                cursor: default;
+                &:after {
+                    content:"";  
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    background: $linkColor;
+                    height: 2px; 
+                }
+            }
+            &-num {
+                font-size: 13px;
+                position: absolute;
+                top: -8px;
+                left: 100%;
+                font-family: $ftMontserratSemiBold;
+                color:$fontColor;
+            }
+        }
+    }
+    &-table {
+        display: flex; 
+        font-size: 13px;
+        &__col {
+            &-info {
+                width: 390px;
+            }
+            &-content {
+                width: calc(100% - 390px);
+                overflow-x: auto;
+            }
+        }
+        [data-row="5"] {
+            min-height: 69px;
+        }  
+        [data-row="4"] {
+            min-height: 52px;
+        }  
+        &__row {
+           min-height: 47px;
+           display: flex;
+           padding: 15px 5px 10px 0; 
+        //    overflow: hidden;
+           &-s {
+               min-height: 69px;
+           }  
+           &-m {
+               min-height: 130px;
+           }
+           &-l {
+               min-height: 200px;
+           }
+           &-xl {
+               min-height: 370px;
+           }
+           .product-parameter-color {
+                align-items: center;
+                margin-right: 10px;
+                .value-item {
+                    margin-bottom: 0;
+                }
+           }     
+        }
+        &__text {
+            line-height: 1.7;
+            display: inline-block;
+            margin-right: 5px;            
+        }
+    }
+    &-link {
+        color: $linkColor;
+        cursor: pointer;
+    }
+    .radio {
+        display: none;
+        &:checked {
+            & + .radio-label {
+                border: 1px solid $linkColor;
+                color: $fontColor;
+                cursor: default;
+            }
+        }
+    }
+    .radio-label {
+        padding: 8px 10px;
+        border: 1px solid #d2d2d2;
+        color: $linkColor;
+        cursor: pointer;
+    }
+    &-info {
+        width: 100%;
+        .compare-table__row {
+            padding-left: 58px;
+        }
+        &__filter {
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 30px;
+        }
+    }
+    &-list {
+        display: flex;
+        max-width: calc(100vw - 380px);
+        .compare-table {
+            &-col{                
+                width: 380px;  
+                min-width: 380px;  
+            }
+            &__row {
+                padding-left: 30px;
+                padding-right: 10px;
+            }
+        }
+        .bg-row {
+            background: #e5f6ff;
+        }
+        
+    } 
+    .product {
+        &-item {
+            .img {
+                width: 150px;
+                height: 150px;
+            }
+            .product-description {
+                max-width: 100%;
+                text-align: left;
+            }
+        } 
+        &-name {
+            font-size: 13px;
+            line-height: 1.7;
+        }
+    }    
+    .price {
+        &-block {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 5px;
+        }
+        &-usd {
+            margin-left: 0;
+            font-size: 15px;
+        }
+        &-old {
+            font-size: 13px;
+            line-height: 15px;
+        }
+        &-box {
+            font-size: 15px;
+        }
+    }
+    .favorite-link {
+        margin-bottom: 3px;
+        margin-left: 3px;
+        &:hover {
+            border-color: transparent;
+        }
+    }
+    .close-link {
+        position: absolute;
+        right:0;
+        &:hover {
+            border-color: transparent;
+             .ic-close-sm{
+                @include sprite (ic-close-sm-active)
+            }  
+        }
+    }
+    .mCSB_scrollTools.mCSB_scrollTools_horizontal {
+        top: 350px;
+        height: 5px;
+        background-color: #e8e8e8;
+    }
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background-color: #b2d8ef;
+        opacity: 1;
+        border: none;
+        height: 5px;
+        border-radius:0;
+        &:hover {
+            background-color: $linkColor;
+        }
+    }
+}
+.bg-row {
+    background: $bgRowBlue;
+}
+.vendor-code {
+    color: $colorWarmGreyTwo;
+}
+.color-row {
+    display: flex;
+}
+.status-row {
+    color: #76b131;
+    i {
+        margin:4px 4px 0 0;
+    }
+}
+// new style
+.compare-page {
+    &:after {
+        content: none;
+    }
+    .hide {
+        opacity: 0;
+    }
+    .compare { 
+        &-table {
+            &__col {
+                width: 335px;
+                min-width: 335px;
+                padding: 12px 5px 12px 30px;
+                &-info {
+                    background: $filterColor;
+                    width: 330px;
+                    min-width: 330px;
+                }
+            }
+            &__row {
+                display: flex;
+                &-fixed {
+                    &.is-fixed {
+                        position: fixed;
+                        top: 56px;
+                        left: 0;
+                        right: 0;  
+                        background: $colorWhite;    
+                        z-index: 2;
+                        box-shadow: 0 3px 4px rgba(222,222,222,.5);                 
+                    }
+                    &-clone {
+                        height: 0;
+                        min-height: 0;
+                    }
+                    .compare-table__col {
+                        background: $colorWhite;
+                        &-info {
+                            background: $filterColor;
+                        }
+                    }
+                }
+                &-bottom-info {
+                    .compare-table__col  {
+                        padding-bottom: 70px;
+                    }
+                }
+            }
+
+        }
+        &-info {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow-x: scroll;
+            .compare-table__row {
+                flex-wrap: nowrap;
+                min-height: 48px;
+                padding: 0;
+                .compare-table__col-info {
+                    padding: 12px 15px 12px 30px;
+                }
+                &:nth-child(even) {
+                    background: $bgBlue;
+                    .compare-table__col-info {
+                        background: $bgRowBlue;                        
+                    }
+                }
+            }
+        } 
+        &-col {
+            &-left {
+                width: 280px; 
+                min-width: 280px;               
+                padding-right: 20px;
+            }
+            &-right {
+                width: 100%;
+            }
+        }           
+    }
+    .bg-row {
+        background: $bgBlue;
+    }
+    .status-row {
+        padding: 12px 0 12px 30px;
+    }
+    .reviews-item-link {
+        height: 100%;
+    }
+    .compare-info__filter {
+        height: 100%;
+    }
+   
+}
+.table-holder {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.is-fixed .img {
+    display: none;
+}

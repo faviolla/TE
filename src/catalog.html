@@ -1,0 +1,2581 @@
+<!DOCTYPE html>
+<html>
+//= templates/head.html
+<body>
+//= templates/header.html
+<main class="main">
+    <div class="section catalog-section">
+        <div class="container">
+            <div class="catalog">
+                <div class="filter-section">
+                    <span class="close-filter"></span>
+                    <div class="filter-title">Фильтры</div>
+                    <div class="filter__container">
+                        <div class="filter-box active">
+                            <div class="filter-box__title">Модель</div>
+                            <div class="filter-box__container">
+                                <ul class="filter-items-list">
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>MacBook Pro 13</span>
+                                                        <span class="count">(12)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>MacBook Pro 15</span>
+                                                        <span class="count">(16)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-box active">
+                            <div class="filter-box__title">Цена</div>
+                            <div class="filter-box__container">
+                                <div class="parameters-block">
+                                    <div class="ui-slider-track-container">
+                                        <div class="ui-slider-track">
+
+                                        </div>
+                                    </div>
+                                    <div class="filter-parameters">
+                                        <div class="filter-parameters-box bx-left">
+                                            <div class="bx-filter-input-container">
+                                                <input class="min-price" type="number" placeholder="от" pattern="\d*">
+                                            </div>
+                                        </div>
+                                        <div class="filter-parameters-box bx-right">
+                                            <div class="bx-filter-input-container">
+                                                <input class="max-price" type="number" placeholder="до" pattern="\d*">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-box active">
+                            <div class="filter-box__title">Модель процессора</div>
+                            <div class="filter-box__container">
+                                <ul class="filter-items-list">
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>Intel Core i5 - 5257U</span>
+                                                        <span class="count">(7)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>Intel Core i5 - 5287U</span>
+                                                        <span class="count">(2)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>Intel Core i7 - 4770HQ</span>
+                                                        <span class="count">(15)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>Intel Core i7 - 4980HQ</span>
+                                                        <span class="count">(3)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <span class="link-more-items">+  Еще</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-box active">
+                            <div class="filter-box__title">Разрешение экрана</div>
+                            <div class="filter-box__container">
+                                <ul class="filter-items-list">
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>1280 x 800</span>
+                                                        <span class="count">(0)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>2560 х 1600</span>
+                                                        <span class="count">(22)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>2880 х 1800</span>
+                                                        <span class="count">(0)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-box active">
+                            <div class="filter-box__title">Цвет</div>
+                            <div class="filter-box__container">
+                                <ul class="filter-items-list">
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>Красный</span>
+                                                        <span class="count">(0)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>Золотой</span>
+                                                        <span class="count">(22)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>Черный</span>
+                                                        <span class="count">(0)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-box active">
+                            <div class="filter-box__title">Объем диска</div>
+                            <div class="filter-box__container">
+                                <ul class="filter-items-list">
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>256</span>
+                                                        <span class="count">(12)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-box active">
+                            <div class="filter-box__title">Год выпуска</div>
+                            <div class="filter-box__container">
+                                <ul class="filter-items-list">
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>2017</span>
+                                                        <span class="count">(12)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="filter-item">
+                                        <div class="checkbox">
+                                            <label>
+                                                <span class="input-checkbox">
+                                                    <input type="checkbox" class="">
+                                                    <span class="checkbox-text">
+                                                        <span>2018</span>
+                                                        <span class="count">(12)</span>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--<span class="all-parameters-link">+ Все параметры</span>-->
+                    </div>
+                    <div class="btn-show">Показать 16 товаров</div>
+                </div>
+                <div class="catalog-holder">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs-list">
+                            <li><a href="">Главная</a></li>
+                            <li><a href="">Apple</a></li>
+                            <li>Mac</li>
+                        </ul>
+                    </div>
+                    <div class="title-section">
+                        <div class="title-h1">
+                            <span class="title-name">MacBook Pro</span>
+                            <span class="count">(155 товаров)</span>
+                        </div>
+                    </div>
+                    <div class="sorted-panel">
+                        <div class="filter-link"><a href="">Фильтры</a></div>
+                        <div class="sorted-list">
+                            <select class="select sort-select">
+                                <option>Сначала дешевле</option>
+                                <option>Сначала дороже</option>
+                                <option>Популярные</option>
+                                <option>С акциями</option>
+                                <option>Топ продаж</option>
+                                <option>Со скидками</option>
+                            </select>
+                        </div>
+                        <div class="selected-filters">
+                            <ul class="selected-filters-list">
+                                <li><label>MacBook Pro 15</label></li>
+                                <li><label>Intel Core i5 - 5287U</label></li>
+                                <li><label>256 GB</label></li>
+                                <li><span class="reset-filters btn-link">Очистить все</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="catalog-list">
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href="" data-openmodal="modals/favorites.html"><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href="" data-openmodal="modals/compare.html" ><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>46 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-discount">- 20%</span>
+                            </div>
+                            <a class="favorite-link" href="" data-openmodal="modals/favorites.html"><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span></span></div>
+                                            <div class="price"><span>69 199 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$2 159</div>
+                                    </div>
+                                    <a class="buy-btn_mini in-basket" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-top-selling">Топ продаж</span>
+                            </div>
+                            <a class="favorite-link active" data-openmodal="modals/favorites.html" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link active" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>31 999 грн</span></div>
+                                            <div class="price"><span>28 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 045</div>
+                                    </div>
+                                    <div class="availability not-available">Нет в наличии</div>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="btn-holder">
+                                            <a href="" data-openmodal="modals/report-availability.html" class="btn btn-block btn-border"><span>Сообщить о поступлении</span></a>
+                                        </div>
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <a class="favorite-link" href="" data-openmodal="modals/favorites.html"><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <div class="availability not-available">Нет в наличии</div>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="btn-holder">
+                                            <a href="" class="btn btn-block btn-border btn-sent-message"><span>Сообщим о поступлении</span></a>
+                                        </div>
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <a class="favorite-link" href="" data-openmodal="modals/favorites.html"><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>46 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <div class="availability not-available">Предзаказ</div>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="btn-holder">
+                                            <a data-openmodal="modals/pre-order.html" href="" class="btn btn-block"><span>Оформить предзаказ</span></a>
+                                        </div>
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-discount">- 20%</span>
+                            </div>
+                            <a class="favorite-link" href="" data-openmodal="modals/favorites.html"><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span></span></div>
+                                            <div class="price"><span>69 199 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$2 159</div>
+                                    </div>
+                                    <div class="availability not-available">Предзаказ</div>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="btn-holder">
+                                            <a href="" class="btn btn-block btn-pre-order"><span>Предзаказ оформлен</span></a>
+                                        </div>
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href="" data-openmodal="modals/favorites.html"><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>31 999 грн</span></div>
+                                            <div class="price"><span>28 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 045</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">                           
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="production-row">
+                                    <div class="availability out-of-production">Снят с производства</div>
+                                    <a href="" class="link">Смотреть новые модели</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>46 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-discount">- 20%</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span></span></div>
+                                            <div class="price"><span>69 199 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$2 159</div>
+                                    </div>
+                                    <a class="buy-btn_mini in-basket" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-discount">- 20%</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span></span></div>
+                                            <div class="price"><span>69 199 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$2 159</div>
+                                    </div>
+                                    <div class="availability not-available">Предзаказ</div>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="btn-holder">
+                                            <a href="" class="btn btn-block btn-pre-order"><span>Предзаказ оформлен</span></a>
+                                        </div>
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>31 999 грн</span></div>
+                                            <div class="price"><span>28 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 045</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item product-item-hit">
+                            <div class="product-label">
+                                <span class="label-top-selling">Топ продаж</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <ul class="product-benefits-list">
+                                    <li>Супер Retina дисплей</li>
+                                    <li>До 10 часов работы от батареии</li>
+                                    <li>Революционные технологии</li>
+                                </ul>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>56 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$2 348</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i><span>Купить</span></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>31 999 грн</span></div>
+                                            <div class="price"><span>28 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 045</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-new">Новинка</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>31 999 грн</span></div>
+                                            <div class="price"><span>28 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 045</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-new">Новинка</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>31 999 грн</span></div>
+                                            <div class="price"><span>28 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 045</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-new">Новинка</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>31 999 грн</span></div>
+                                            <div class="price"><span>28 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 045</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item techno">
+                            <div class="services-item">
+                                <a href="">
+                                    <span class="image">
+                                        <img src="img/service01.png" alt="img">
+                                    </span>
+                                    <span class="service-descr">
+                                        <span class="service-name">Технообмен</span>
+                                        <span class="service-note">Приноси старый, уноси новый</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>31 999 грн</span></div>
+                                            <div class="price"><span>28 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 045</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-discount">- 20%</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span></span></div>
+                                            <div class="price"><span>69 199 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$2 159</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-new">Новинка</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-new">Новинка</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>46 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-discount">- 20%</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span></span></div>
+                                            <div class="price"><span>69 199 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$2 159</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item helping">
+                            <div class="form-box">
+                                <form class="form_validate" method="POST">
+                                    <div class="form-visual">
+                                        <div class="helping-title">Помочь с выбором</div>
+                                        <div class="row">
+                                            <div class="input-holder field">
+                                                <input type="text" class="input validate_phone form-control" data-validate="required-number">
+                                                <span class="label-input">Телефон</span>
+                                                <span class="error-text">Введите номер телефона</span>
+                                            </div>
+                                        </div>
+                                        <div class="submit-holder">
+                                            <input type="submit" class="btn btn-submit btn-block" value="Перезвоните мне">
+                                        </div>
+                                    </div>
+                                    <div class="form-feedback-message">
+                                        <div class="helping-title">Ожидайте!</div>
+                                        <div class="feedback-message">Мы уже бежим к телефону</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-new">Новинка</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-new">Новинка</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>31 999 грн</span></div>
+                                            <div class="price"><span>28 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 045</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13" 512GB Touch Bar, 2018</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>6 999 грн</span></div>
+                                            <div class="price"><span>44 999 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 619</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                        <!-- product item -->
+                        <div class="product-item">
+                            <div class="product-label">
+                                <span class="label-gift">Подарок</span>
+                            </div>
+                            <a class="favorite-link" href=""><i class="icon-favorite"></i></a>
+                            <a class="comparing-link" href=""  data-openmodal="modals/compare.html"><i class="icon-comparing"></i></a>
+                            <div class="img">
+                                <a href=""><img src="img/product01.jpg" alt="product"></a>
+                            </div>
+                            <div class="product-description">
+                                <div class="code"><span>YU78Y7M6</span></div>
+                                <div class="product-name">
+                                    <a href="">Ноутбук Apple MacBook Pro 13", 256GB Retina Silver with Touch Bar, 2017, MPXX2</a>
+                                </div>
+                                <div class="btn-buy_row">
+                                    <div class="price-block">
+                                        <div class="price-box">
+                                            <div class="price-old"><span>31 999 грн</span></div>
+                                            <div class="price"><span>28 099 грн </span></div>
+                                        </div>
+                                        <div class="price-usd">$1 045</div>
+                                    </div>
+                                    <a class="buy-btn_mini" href="#"><i class="icon-basket_blue"></i></a>
+                                </div>
+                                <div class="hidden-info">
+                                    <div class="hidden-info-holder">
+                                        <div class="rate-row">
+                                            <div class="rate">
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini full"></span>
+                                                <span class="star-mini"></span>
+                                            </div>
+                                            <div class="product-reviews">13 отзывов</div>
+                                        </div>
+                                        <ul class="info-items-list">
+                                            <li>
+                                                <span class="info-name">Диагональ дисплея (дюйм):</span>
+                                                <span class="info-value">13,3</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Разрешение дисплея:</span>
+                                                <span class="info-value">2560х1600</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Видеоадаптер:</span>
+                                                <span class="info-value">Intel® Core™ i5</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Колличество ядер:</span>
+                                                <span class="info-value">4</span>
+                                            </li>
+                                            <li>
+                                                <span class="info-name">Тип дисплея:</span>
+                                                <span class="info-value">Retina</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product item ending -->
+                    </div>
+                    <div class="paging-panel">
+                        <div class="pages-counter">
+                            <span class="pages-counter-title">Показывать:</span>
+                            <select class="select">
+                                <option>по 32</option>
+                                <option>по 64</option>
+                                <option>по 128</option>
+                            </select>
+                        </div>
+                        <div class="show-more">
+                            <div class="link-show-more">
+                                <i class="icon-showing-more"></i>
+                                <span>Показать еще</span>
+                            </div>
+                        </div>
+                        <ul class="paging">
+                            <li class="active"><span>1</span></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li>...</li>
+                            <li><a href="">10</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section viewed-products-section">
+        <div class="container">
+            <div class="viewed-products">
+                <div class="viewed-products-heading">
+                    <div class="viewed-products-title">Вы просматривали</div>
+                    <div class="link-holder">
+                        <a href="" class="link-more">Все просмотренные</a>
+                    </div>
+                </div>
+                <div class="viewed-products-slider">
+                    <div class="product-item">
+                        <div class="img">
+                            <a href=""><img src="img/img-product04.jpg" alt="product"></a>
+                        </div>
+                        <div class="product-descr">
+                            <div class="code"><span>YU78Y7M6</span></div>
+                            <div class="product-name">
+                                <a href="">Apple MacBook Pro Retina Touch Bar 15" 256Gb Touch Bar Space Gray (MPTR2) 2017</a>
+                            </div>
+                            <div class="price-block">
+                                <div class="price-box">
+                                    <div class="price-old"><span>31 999 грн</span></div>
+                                    <div class="price"><span>28 099 грн </span></div>
+                                </div>
+                                <div class="price-usd">$1 045</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img">
+                            <a href=""><img src="img/img-product01.jpg" alt="product"></a>
+                        </div>
+                        <div class="product-descr">
+                            <div class="code"><span>YU78Y7M6</span></div>
+                            <div class="product-name">
+                                <a href="">Apple iPhone 8 256Gb Silver</a>
+                            </div>
+                            <div class="price-block">
+                                <div class="price-box">
+                                    <div class="price-old"><span>31 999 грн</span></div>
+                                    <div class="price"><span>28 099 грн </span></div>
+                                </div>
+                                <div class="price-usd">$1 045</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img">
+                            <a href=""><img src="img/img-product04.jpg" alt="product"></a>
+                        </div>
+                        <div class="product-descr">
+                            <div class="code"><span>YU78Y7M6</span></div>
+                            <div class="product-name">
+                                <a href="">Apple MacBook Pro Retina Touch Bar 15" 256Gb Touch Bar Space Gray (MPTR2) 2017</a>
+                            </div>
+                            <div class="price-block">
+                                <div class="price-box">
+                                    <div class="price-old"><span>31 999 грн</span></div>
+                                    <div class="price"><span>28 099 грн </span></div>
+                                </div>
+                                <div class="price-usd">$1 045</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="ceo-section">
+        <div class="container">
+            <div class="ceo-block">
+                <div class="text-block">
+                    <h1>Интернет-магазин «Техно Еж»</h1>
+                    <p>Это площадка, где вы сможете найти самые актуальные предложения из мира техники, цифрового и аналогового оборудования для отдыха, спорта, профессиональной съемки. Каталог предложений включает функциональные и удобные гаджеты и устройства, которыми пользуются миллионы людей по всему миру. Товары не нуждаются в особой рекламе, так как их качество говорит само за себя.</p>
+                    <br>
+                    <p>Каталог предложений включает функциональные и удобные гаджеты и устройства, которыми пользуются миллионы людей по всему миру. Товары не нуждаются в особой рекламе, так как их качество говорит само за себя. </p>
+                    <br>
+                    <p>Ассортимент предложений включает решения для повседневного использования и уникальные образцы с оригинальным функционалом. На страницах сайта и в оффлайн-магазинах «Техно Еж» вы всегда найдете то, что нужно!
+                    </p>
+                </div>
+                <a href="" class="opening-text">
+                    <i class="icon-plus"></i>
+                    <span>Подробнее</span>
+                    <span class="hidden">Свернуть</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="subs-section">
+        <div class="container">
+            <div class="subs-holder">
+                <div class="title-holder">
+                    <div class="title-h2">Подпишись на рассылку</div>
+                    <div class="title-note-row">и получи 100 грн на покупку</div>
+                </div>
+                <div class="section-container">
+                    <form action="" class="subs-form form_validate">
+                        <div class="subs-box">
+                            <div class="input-holder field">
+                                <input type="text" data-validate="required-email"  class="input form-control">
+                                <label class="label-input">Ваш e-mail</label>
+                            </div>
+                            <button type="submit" class="btn btn-submit">
+                                <span>Подписаться</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+//= templates/footer.html
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+</body>
+</html>

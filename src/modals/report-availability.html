@@ -1,0 +1,54 @@
+<div class="modal-content modal-content--availability">
+    <a href="#" class="close-modal" data-dismiss="modal"></a>
+    <div class="modal-body modal-body--availability">
+        <div class="modal-form-wrap">
+            <div class="modal-form-holder">
+                <div class="form__modal">
+                    <div class="modal-form">
+                        <span class="modal-title">Сообщить о поступлении </span>
+                        <span class="modal-text">Укажите свои контактные данные и мы вам сообщим когда товар будет в наличии.</span>
+                        <form class="form_validate form-with-thx" method="POST">
+                            <div class="row">
+                                <div class="input-holder field">
+                                    <input type="text" class="input form-control js-input"  data-validate="required-name">
+                                    <span class="label-input">Имя</span>
+                                    <span class="error-text">Введите имя</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-holder field">
+                                    <input type="text" class="input form-control js-input validate_phone" data-validate="required-number">
+                                    <span class="label-input">Телефон</span>
+                                    <span class="error-text">Данные введены некорректно</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-holder field">
+                                    <input type="email" class="input form-control js-input" data-validate="required-email">
+                                    <span class="label-input">E-mail</span>
+                                    <span class="error-text">Данные введены некорректно</span>
+                                </div>
+                            </div>
+                            <div class="row submit-holder">
+                                <input type="submit" class="btn btn-submit" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="success-send-form">
+                        <div class="row">
+                            <div class="modal-title">
+                                <span>Ваша заявка принята</span>
+                            </div>					
+                        </div>
+                        <div class="row">						
+                            <span class="modal-text">Мы обязательно уведомим вас о поступлении товара.</span>							
+                        </div>	
+                        <div class="row row-centered">
+                            <span class="ic-success"></span>
+                        </div>				
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

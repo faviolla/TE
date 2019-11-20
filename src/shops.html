@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+//= templates/head.html
+
+<body>
+    //= templates/header.html
+    <main class="main">
+        <div class="section content-page">
+            <div class="banner-top">
+                <span class="banner-top-img" style="background-image:url('img/shops-banner.jpg')"></span>
+            </div>
+            <div class="content-menu-holder">
+                <div class="content-page-holder">
+                    <nav class="content-menu h_customScrollbar">
+                        <ul class="content-menu_items">
+                            <li><a href="#" class="menu_item">О нас</a></li>
+                            <li class="active"><span class="menu_item">Магазины</span></li>
+                            <li><a href="#" class="menu_item">Карьера</a></li>
+                            <li><a href="#" class="menu_item">Контакты</a></li>
+                            <li><a href="#" class="menu_item">Корпоративным клиентам</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="container">
+                <div class="content content-page-holder shops">
+                    <div class="breadcrumbs">
+                        <ul class="breadcrumbs-list">
+                            <li><a href="">Главная</a></li>
+                            <li>Магазины</li>
+                        </ul>
+                    </div>
+                    <div class="title-h1">
+                        <span class="title-name">Магазины</span>
+                    </div>
+                    <section class="section map-holder-section">
+                        <div class="text-content">
+                            <span>После заголовка добавить блок текста, где будет написано что они расположены в лучших
+                                ТРЦ
+                                Украины и можно найти ближайший магазин.</span>
+                        </div>                        
+                    </section>
+                    <section class="section main-shop-map-section">
+                        <div class="section-title">
+                            <span>Ближайшие магазины</span>
+                        </div>
+                        <div class="main-shop-map">
+                            <div id="main-shop-map">
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section  accordeon-section">
+                        <div class="section-title">
+                            <span>Все магазины</span>
+                        </div>
+                        <div class="shop-city-name">
+                            <span>Харьков</span>
+                        </div>
+                        <div class="accordeon_items accordeon_big">
+                            <div class="accordeon_item">
+                                <div class="accordeon_head">
+                                    <div class="accordeon_head-row">
+                                        <div class="accordeon_head-col">
+                                            <span class="addr">ТРЦ «Дафи» (1 этаж)</span>
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>ул. Героев труда, 9</span>
+                                            <span>ст. м. Героев труда </span>
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>
+                                                <a href="tel:+38 (063) 440 20 44">+38 (093) 539 57 75</a>
+                                            </span>                                            
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>10:00 – 20:00</span>
+                                            <span>(сб,вс 11-18) </span>
+                                            <span class="grey">Без выходных</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordeon_content">
+                                    <div class="accordeon_content-holder">
+                                        <div class="accordeon_content-info">
+                                            <span class="accordeon_content-text">Мы находимся на 1-м этаже, центральный
+                                                вход, слева от эскалаторов и ресторана «Атриум» вглубину, за магазином
+                                                Yabloki. Рядом магазины Puma, Guess, Nike</span>
+                                            <div class="accordeon_content-links">
+                                                <a href="#" class="accordeon_content-link" data-link="map">Как
+                                                    добраться</a>
+                                                <a href="#" class="accordeon_content-link selected" data-link="slider">Размещение
+                                                    в ТРЦ</a>
+                                            </div>
+                                            <a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%93%D0%B5%D1%80%D0%BE%D0%B5%D0%B2+%D0%A2%D1%80%D1%83%D0%B4%D0%B0,+9,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+61000/@50.0272818,36.3286569,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a764dfe4efbf:0x8e8ed24770ab38a!8m2!3d50.0272784!4d36.3308456?hl=ru" target="_blank">Построить маршрут в Google Maps</a>
+                                        </div>
+                                        <div class="accordeon_content-detail">
+                                            <div class="slider-holder selected" data-conteiner="slider">
+                                                <div class="shop-slider-items js-one-item-shop">
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="map-holder" data-conteiner="map">
+                                                <div class="col_map">
+                                                    <div id="map-1" lat="50.0272784" lng="36.3286569" class="shop_map"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordeon_item">
+                                <div class="accordeon_head">
+                                    <div class="accordeon_head-row">
+                                        <div class="accordeon_head-col">
+                                            <span class="addr">Шоурум Техно Ёж 1 этаж</span>
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>ул. Рымарская, 6</span>
+                                            <span>ст. м. Исторический музей</span>
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>
+                                                <a href="tel:+38 (063) 440 20 44">+38 (063) 440 20 44</a>
+                                            </span>                                            
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>10:00 – 20:00</span>                                           
+                                            <span class="grey">Без выходных</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordeon_content">
+                                    <div class="accordeon_content-holder">
+                                        <div class="accordeon_content-info">
+                                            <span class="accordeon_content-text">Мы находимся на 1-м этаже, центральный
+                                                вход, слева от эскалаторов и ресторана «Атриум» вглубину, за магазином
+                                                Yabloki. Рядом магазины Puma, Guess, Nike</span>
+                                            <div class="accordeon_content-links">
+                                                <a href="#" class="accordeon_content-link" data-link="map">Как
+                                                    добраться</a>
+                                                <a href="#" class="accordeon_content-link selected" data-link="slider">Размещение
+                                                    в ТРЦ</a>
+                                            </div>
+                                            <a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%A0%D1%8B%D0%BC%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F,+6,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+61000/@49.993933,36.2287064,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a0faabdffe51:0x5f8727980b4b3af0!8m2!3d49.9939296!4d36.2308951?hl=ru" target="_blank">Построить маршрут в Google Maps</a>
+                                        </div>
+                                        <div class="accordeon_content-detail">
+                                            <div class="slider-holder selected" data-conteiner="slider">
+                                                <div class="shop-slider-items js-one-item-shop">
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="map-holder" data-conteiner="map">
+                                                <div class="col_map">
+                                                    <div id="map-10" lat="50.0272784" lng="36.3286569" class="shop_map"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordeon_item">
+                                <div class="accordeon_head">
+                                    <div class="accordeon_head-row">
+                                        <div class="accordeon_head-col">
+                                            <span class="addr">ТРЦ "Французский бульвар" 0 этаж</span>
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>ул. Ак. Павлова, 44-Б</span>
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span> <a href="tel:+38 (063) 440 20 44">+38 (063) 518 39 51</a></span>                                           
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>10:00 – 22:00</span>
+                                            <span class="grey">Без выходных</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordeon_content">
+                                    <div class="accordeon_content-holder">
+                                        <div class="accordeon_content-info">
+                                            <span class="accordeon_content-text">Мы находимся на 1-м этаже, центральный
+                                                вход, слева от эскалаторов и ресторана «Атриум» вглубину, за магазином
+                                                Yabloki. Рядом магазины Puma, Guess, Nike</span>
+                                            <div class="accordeon_content-links">
+                                                <a href="#" class="accordeon_content-link  selected" data-link="map">Как
+                                                    добраться</a>
+                                                <a href="#" class="accordeon_content-link" data-link="slider">Размещение
+                                                    в ТРЦ</a>
+                                            </div>
+                                            <a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D0%BA%D0%B0+%D0%9F%D0%B0%D0%B2%D0%BB%D0%BE%D0%B2%D0%B0,+44%D0%91,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+61000/@49.9903855,36.2882175,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a0a0ad0ece77:0x49fea7a1cc752832!8m2!3d49.9903821!4d36.2904062?hl=ru" target="_blank">Построить маршрут в Google Maps</a>
+                                        </div>
+                                        <div class="accordeon_content-detail">
+                                            <div class="slider-holder" data-conteiner="slider">
+                                                <div class="shop-slider-items js-one-item-shop">
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="map-holder  selected" data-conteiner="map">
+                                                <div class="col_map">
+                                                    <div id="map-2" lat="49.9903821" lng="36.2882175" class="shop_map"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section  accordeon-section">
+                        <div class="shop-city-name">
+                            <span>Киев</span>
+                        </div>
+                        <div class="accordeon_items accordeon_big">
+                            <div class="accordeon_item">
+                                <div class="accordeon_head">
+                                    <div class="accordeon_head-row">
+                                        <div class="accordeon_head-col">
+                                            <span class="addr">Шоурум Техно Ёж (1 этаж)</span>
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>ул. Рымарская, 6</span>
+                                            <span>ст. м. Исторический музей</span>
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span><a href="tel:+38 (063) 440 20 44">+38 (063) 440 20 44</a></span>                                            
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>10:00 – 20:00</span>
+                                            <span class="grey">Без выходных</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordeon_content">
+                                    <div class="accordeon_content-holder">
+                                        <div class="accordeon_content-info">
+                                            <span class="accordeon_content-text">Мы находимся на 1-м этаже, центральный
+                                                вход, слева от эскалаторов и ресторана «Атриум» вглубину, за магазином
+                                                Yabloki. Рядом магазины Puma, Guess, Nike</span>
+                                            <div class="accordeon_content-links">
+                                                <a href="#" class="accordeon_content-link" data-link="map">Как
+                                                    добраться</a>
+                                                <a href="#" class="accordeon_content-link selected" data-link="slider">Размещение
+                                                    в ТРЦ</a>
+                                            </div>
+                                            <a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%A0%D1%8B%D0%BC%D0%B0%D1%80%D1%81%D0%BA%D0%B0%D1%8F,+6,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+61000/@49.993933,36.2287064,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a0faabdffe51:0x5f8727980b4b3af0!8m2!3d49.9939296!4d36.2308951?hl=ru" target="_blank">Построить маршрут в Google Maps</a>
+                                        </div>
+                                        <div class="accordeon_content-detail">
+                                            <div class="slider-holder selected" data-conteiner="slider">
+                                                <div class="shop-slider-items js-one-item-shop">
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="map-holder" data-conteiner="map">
+                                                <div class="col_map">
+                                                    <div id="map-4" lat="50.0274050" lng="36.3306380" class="shop_map"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordeon_item">
+                                <div class="accordeon_head">
+                                    <div class="accordeon_head-row">
+                                        <div class="accordeon_head-col">
+                                            <span class="addr">ТРЦ «Дафи» (1 этаж)</span>
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>ул. Героев труда, 9</span>
+                                            <span>ст. м. Героев труда </span>
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span><a href="tel:+38 (063) 440 20 44">+38 (063) 440 20 44</a></span>                                            
+                                        </div>
+                                        <div class="accordeon_head-col">
+                                            <span>10:00 – 20:00</span>
+                                            <span>(сб,вс 11-18) </span>
+                                            <span class="grey">Без выходных</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordeon_content">
+                                    <div class="accordeon_content-holder">
+                                        <div class="accordeon_content-info">
+                                            <span class="accordeon_content-text">Мы находимся на 1-м этаже, центральный
+                                                вход, слева от эскалаторов и ресторана «Атриум» вглубину, за магазином
+                                                Yabloki. Рядом магазины Puma, Guess, Nike</span>
+                                            <div class="accordeon_content-links">
+                                                <a href="#" class="accordeon_content-link" data-link="map">Как
+                                                    добраться</a>
+                                                <a href="#" class="accordeon_content-link  selected" data-link="slider">Размещение
+                                                    в ТРЦ</a>
+                                            </div>
+                                            <a href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%93%D0%B5%D1%80%D0%BE%D0%B5%D0%B2+%D0%A2%D1%80%D1%83%D0%B4%D0%B0,+9,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+61000/@50.0272818,36.3286569,17z/data=!3m1!4b1!4m5!3m4!1s0x4127a764dfe4efbf:0x8e8ed24770ab38a!8m2!3d50.0272784!4d36.3308456?hl=ru" target="_blank">Построить маршрут в Google Maps</a>
+                                        </div>
+                                        <div class="accordeon_content-detail">
+                                            <div class="slider-holder selected" data-conteiner="slider">
+                                                <div class="shop-slider-items js-one-item-shop">
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                    <div class="slide-item">
+                                                        <img src="img/img-shop09.jpg" alt="Shop">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="map-holder" data-conteiner="map">
+                                                <div class="col_map">
+                                                    <div id="map-5" lat="50.0274050" lng="36.3306380" class="shop_map"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        //= templates/subs.html
+    </main>
+    //= templates/footer.html
+</body>
+
+</html>

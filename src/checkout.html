@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+//= templates/head.html
+
+<body class="main-page checkout bg-grey">
+    <header class="bg-white" id="header">
+        <div class="container">
+          <div class="header-holder">
+            <div class="col">
+              <div class="header-link-holder">
+                <a href="#" class="arrow-back"></a>
+                <span class="page-name">Оформление заказа</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="logo">
+                <a href="home-page.html">
+                  <img src="img/logo.svg" alt="tehnoez">
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="callback dropdown-main-container">
+                <div class="callback-phone">
+                  <i class="ic-callback"></i>
+                  <a href="tel:0800755754">
+                    <span class="callback-num">0 800 755 754</span>
+                  </a>
+                </div>
+                <a href="" class="callback-link js-dropdown">Заказать звонок</a>
+                <div class="callback-dropdown">
+                  <div class="callback-dropdown-holder dropdown-holder">
+                    <div class="dropdown-conteiner">
+                      <span class="close"></span>
+                      <div class="form-box">
+                        <div class="callback-title dropdown-title"><span>Заказать звонок</span></div>
+                        <form action="" class="form_validate">
+                          <div class="row">
+                            <div class="input-holder field">
+                              <input type="text" data-validate="required-name" class="input form-control">
+                              <label class="label-input">Имя</label>
+                              <span class="error-text">Имя введено неверно.</span>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-holder field">
+                              <input type="text" data-validate="required-number" class="input validate_phone form-control">
+                              <label class="label-input">Телефон</label>
+                              <span class="error-text">Телефон введен неверно. Проверьте правильность ввода.</span>
+                            </div>
+                          </div>
+                          <div class="row submit-holder">
+                            <input type="submit" class="btn btn-submit" value="Отправить">
+                          </div>
+                        </form>
+                      </div>
+                      <div class="thx-box">
+                        <!-- <div class="thx-today">
+                                  <div class="callback-title dropdown-title"><span>Мы уже бежим к телефону!</span></div>
+                                  <i class="icon-statrup"></i>
+                              </div> -->
+                        <div class="thx-tomorrow">
+                          <div class="callback-title dropdown-title"><span>К сожалению, сегодня мы уже разошлись по
+                              домам!</span></div>
+                          <p>Но завтра мы обязательно вас наберем. До связи.</p>
+                          <i class="icon-moon"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+  <main class="main">   
+    <div class="checkout-content">
+      <div class="container">
+        <div class="checkout-holder">
+          <div class="checkout-content-holder">
+            <div class="form__wrapper">
+              <form method="POST" class="checkout-form form_validate">
+                <div class="user-info row bg-white">
+                  <div class="title-holder">
+                    <div class="title-h3">Контактные данные</div>
+                  </div>
+                  <div class="checkout-info-user">
+                    <div class="checkout-info-left">
+                      <div class="checkout-info-col">
+                        <div class="input-holder field">
+                          <input type="text" class="input form-control" data-validate="required-name">
+                          <label class="label-input">Имя</label>
+                          <span class="error-text">Поле заполнено неверно.</span>
+                        </div>
+                        <div class="input-holder field">
+                          <input type="text" class="input form-control" data-validate="required-name">
+                          <label class="label-input">Фамилия</label>
+                          <span class="error-text">Поле заполнено неверно.</span>
+                        </div>
+                        <div class="input-holder field">
+                          <input type="text" class="input form-control" data-validate="required-email">
+                          <label class="label-input">E-mail</label>
+                          <span class="error-text">Поле заполнено неверно.</span>
+                        </div>
+                        <div class="input-holder field">
+                          <input type="text" data-validate="required-number" class="input validate_phone form-control">
+                          <label class="label-input">Телефон</label>
+                          <span class="error-text">Поле заполнено неверно.</span>
+                        </div>
+                        <div class="input-holder field">
+                          <input type="text" class="input form-control" data-validate="required">
+                          <label class="label-input">Город</label>
+                          <span class="error-text">Поле заполнено неверно.</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="checkout-info-right">
+                      <div class="checkout-info-col">
+                        <div class="checkout-info-text">
+                          <span>Войдите в кабинет и мы автоматически заполним ваши контактные данные и сохраним данные
+                            о заказе в вашем кабинете</span>
+                        </div>
+                        <div class="checkout-info-holder">
+                          <a href="#" class="btn">Войти</a>
+                          <div class="socials-holder">
+                            <ul class="social-items">
+                              <li><a href="#" class="socials-item facebook-link"><i class="fab fa-facebook-f"></i></a></li>
+                              <!-- <li><a href="#" class="socials-item twitter-link"><i class="fab fa-twitter"></i></a></li> -->
+                              <li><a href="#" class="socials-item google-link"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="delivery-info row bg-white">
+                  <div class="delivery-top">
+                    <div class="title-h3">Способ доставки в <span class="link-city">Харьков</span></div>                  
+                  </div>
+                  <div class="delivery tab">
+                    <div class="radio-block">
+                      <div class="radio-title active" data-title="pickup">
+                        <label class="radio-label">
+                          <span class="input-radio"><input type="radio" name="DELIVERY_ID"></span>
+                          <span class="tab-name">Самовывоз</span>
+                          <span class="tab-dop-info">1-3 дня</span>
+                        </label>
+                      </div>
+                      <div class="radio-info pickup-info active" data-delivery="pickup">
+                        <div class="radio-info-content conteiner-map-holder">                         
+                          <div class="col col-4">
+                            <div class="select-conteiner-input">
+                              <div class="input-holder  select-holder">
+                                <select class="select select-city" id="select-shop" data-placeholder="Магазин"
+                                  data-visible-options="5">
+                                  <option></option>
+                                  <option>ТЦ "Магеллан" 1 этаж</option>
+                                  <option>ТРЦ "Мост Сити" 1 этаж</option>
+                                  <option>ТРЦ «City Mall» 1 этаж</option>
+                                  <option>ТРЦ "Dream town" 1 этаж</option>
+                                </select>
+                                <label class="label-select" for="select-city">Магазин</label>
+                              </div>
+                              <span class="marker-holder js-toggle-map"><i class="ic-marker"></i><span class="close"></span> <span class="on-map-link">На карте</span> </span>
+                            </div>
+                          </div>
+                          <div class="col_map toggle-map">
+                            <div id="map-1" lat="50.0274050" lng="36.3306380" class="shop_map"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="radio-title new_post" data-title="new_post">
+                        <div class="radio">
+                          <label class="radio-label">
+                            <span class="input-radio"><input type="radio" name="DELIVERY_ID"></span>
+                            <span class="tab-name">Новой почтой</span>
+                            <span class="tab-dop-info">2-3 дня</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="radio-info new_post-info" data-delivery="new_post">
+                        <div class="radio-addr">
+                          <label class="label-radio">
+                            <input type="radio" name="radioaddr-newpost" class="radio-input">
+                            <i class="ic-radio"></i>
+                            <span class="radio-text">Харьков, от 45 Ахсарова 17, до 30 кг</span>
+                          </label>
+                        </div>
+                        <div class="radio-addr">
+                          <label class="label-radio">
+                            <input type="radio" name="radioaddr-newpost" class="radio-input" checked>
+                            <i class="ic-radio"></i>
+                            <span class="radio-text">Другое отделение</span>
+                          </label>
+                        </div>
+                        <div class="radio-info-content conteiner-map-holder">                         
+                          <div class="col col-4">
+                            <div class="select-conteiner-input">
+                              <div class="input-holder  select-holder">
+                                <select class="select select-city " id="select-city" data-placeholder="Отделение"
+                                  data-visible-options="6" data-search="true">
+                                  <option></option>
+                                  <option>Отделение 1 ул. Полевая, 67</option>
+                                  <option>Отделение 2 просп. Московский, 54а</option>
+                                  <option>Отделение 3 ул. Тюринская (ран. Якира), 124</option>
+                                  <option>Отделение 4 ул. Достоевского, 5</option>
+                                  <option>Отделение 5 пл. Ю. Кононенко, 1а (Авторынок "Лоск", здание "Приват Банка")</option>
+                                  <option>Отделение 6 ул. Академика Павлова, 120</option>
+                                  <option>Отделение 7 просп. Победы, 46-а</option>
+                                  <option>Отделение 8 ул. Малогончаровская, 28/30</option>
+                                  <option>Отделение 6 ул. Академика Павлова, 120</option>
+                                  <option>Отделение 7 просп. Победы, 46-а</option>
+                                  <option>Отделение 8 ул. Малогончаровская, 28/30</option>
+                                </select>
+                                <label class="label-select" for="select-city">Отделение</label>
+                              </div>
+                              <span class="marker-holder js-toggle-map"><i class="ic-marker"></i><span class="close"></span><span class="on-map-link">На карте</span></span>
+                            </div>
+                          </div>
+                          <div class="col_map toggle-map">
+                            <div id="map-2" lat="50.0274050" lng="36.3306380" class="shop_map"></div>
+                          </div>
+                        </div>
+                        <div class="checkout-info__another-person checkbox-toggle-conteiner">
+                          <div class="checkbox">
+                            <label class="label-checkbox" for="another_person_checkbox">
+                              <span class="checkout-checkbox">
+                                <span class="checkout-checkbox-text">Получатель другой человек</span>
+                                <input type="checkbox" class="checkbox-toggle" id="another_person_checkbox">
+                                <i class="ic-checkbox"></i>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="hidden_conteiner checkbox-toggle-content">
+                            <div class="row-holder">
+                              <div class="col col-2">
+                                <div class="input-holder field">
+                                  <input type="text" class="input form-control">
+                                  <label class="label-input">Имя</label>
+                                  <span class="error-text">Поле заполнено неверно.</span>
+                                </div>
+                              </div>
+                              <div class="col col-3">
+                                <div class="input-holder field">
+                                  <input type="text" class="input form-control">
+                                  <label class="label-input">Фамилия</label>
+                                  <span class="error-text">Поле заполнено неверно.</span>
+                                </div>
+                              </div>
+                              <div class="col  col-3">
+                                <div class="input-holder field">
+                                  <input type="text"  class="input validate_phone form-control">
+                                  <label class="label-input">Телефон</label>
+                                  <span class="error-text">Поле заполнено неверно.</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="radio-title address" data-title="address">
+                        <div class="radio">
+                          <label class="radio-label">
+                            <span class="input-radio"><input type="radio" name="DELIVERY_ID"></span>
+                            <span class="tab-name">На адрес</span>
+                            <span class="tab-dop-info">2-3 дня</span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="radio-info courier_new_post-info" data-delivery="address">
+                        <div class="radio-addr">
+                          <label class="label-radio">
+                            <input type="radio" name="radioaddr" class="radio-input">
+                            <i class="ic-radio"></i>
+                            <span class="radio-text">Харьков, от 45 Ахсарова 17, до 30 кг</span>
+                          </label>
+                        </div>
+                        <div class="radio-addr">
+                          <label class="label-radio">
+                            <input type="radio" name="radioaddr" class="radio-input" checked>
+                            <i class="ic-radio"></i>
+                            <span class="radio-text">Новый адрес</span>
+                          </label>
+                        </div>
+                        <div class="radio-info-content">                         
+                          <div class="col col-3">
+                            <div class="input-holder field">
+                              <input type="text" class="input form-control">
+                              <label class="label-input">Улица</label>
+                              <span class="error-text">Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="col col-1">
+                            <div class="input-holder field">
+                              <input type="text" class="input form-control">
+                              <label class="label-input">Дом</label>
+                              <span class="error-text">Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                          <div class="col col-1">
+                            <div class="input-holder field">
+                              <input type="text" class="input form-control">
+                              <label class="label-input">Квартира</label>
+                              <span class="error-text">Поле заполнено неверно</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="checkout-info__another-person checkbox-toggle-conteiner">
+                          <div class="checkbox">
+                            <label class="label-checkbox">
+                              <span class="checkout-checkbox">
+                                <span class="checkout-checkbox-text">Получатель другой человек</span>
+                                <input type="checkbox" class="checkbox-toggle">
+                                <i class="ic-checkbox"></i>
+                              </span>
+                            </label>
+                          </div>
+                          <div class="hidden_conteiner checkbox-toggle-content">
+                            <div class="row-holder">
+                              <div class="col col-2">
+                                <div class="input-holder field">
+                                  <input type="text" class="input form-control">
+                                  <label class="label-input">Имя</label>
+                                  <span class="error-text">Поле заполнено неверно.</span>
+                                </div>
+                              </div>
+                              <div class="col col-3">
+                                <div class="input-holder field">
+                                  <input type="text" class="input form-control">
+                                  <label class="label-input">Фамилия</label>
+                                  <span class="error-text">Поле заполнено неверно.</span>
+                                </div>
+                              </div>
+                              <div class="col  col-3">
+                                <div class="input-holder field">
+                                  <input type="text" data-validate="required-number" class="input validate_phone form-control">
+                                  <label class="label-input">Телефон</label>
+                                  <span class="error-text">Поле заполнено неверно.</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" checkbox-toggle-conteiner">
+                      <div class="checkbox checkbox-comment">
+                        <label class="label-checkbox" for="add-comment">
+                          <span class="checkout-checkbox">
+                            <span class="link">Добавить комментарий</span>
+                            <input type="checkbox" class="checkbox-toggle" id="add-comment">
+                          </span>
+                        </label>
+                        <label class="label-checkbox">
+                          <span class="checkout-checkbox">
+                            <span class="text">Не перезванивать</span>
+                            <input type="checkbox">
+                            <i class="ic-checkbox"></i>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="hidden_conteiner checkbox-toggle-content">
+                        <div class="row-holder">
+                          <div class="input-holder field textarea-holder">
+                            <textarea class="input form-control js-input textarea"></textarea>
+                            <span class="label-input">Сопроводительное сообщение</span>
+                            <span class="error-text">Данные введены некорректно</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pay-info row bg-white">
+                  <div class="title-holder">
+                    <div class="title-h3">Способ оплаты</div>
+                  </div>
+                  <div class="pay tab">
+                    <div class="radio-block radio-block-pay">
+                      <div class="radio-title active">
+                        <label class="radio-label">
+                          <span class="input-radio"><input type="radio" name="pay" checked></span>
+                          <span class="tab-name">Наложенный платеж</span>
+                          <span class="tab-dop-info">по тарифам перевозчика +2%</span>
+                        </label>
+                      </div>
+                      <div class="radio-title">
+                        <label class="radio-label">
+                          <span class="input-radio"><input type="radio" name="pay"></span>
+                          <span class="tab-name">Картой Visa/ Master card</span>
+                          <span class="tab-dop-info">Комиссия +1%</span>
+                        </label>
+                      </div>
+                      <div class="radio-title">
+                        <label class="radio-label">
+                          <span class="input-radio"><input type="radio" name="pay"></span>
+                          <span class="tab-name">Безналичный</span>
+                          <span class="tab-dop-info">комисся +2,5%</span>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row submit-holder submit-btn-holder">                 
+                    <input type="submit" id="submit-form" class="btn" value="Продолжить">                  
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="checkout-order-holder order">
+            <div class="order-detail bg-white">
+              <div class="title-holder">
+                <span class="order-title">Ваш заказ</span>
+                <span class="order-link">Редактировать</span>
+              </div>
+              <div class="order-detail-holder mCustomScroll">
+                <div class="order-detail-item">
+                  <div class="order-detail-img">
+                    <a href="#" class="order-detail-img-link">
+                      <img src="img/img-product04.jpg" alt="Product">
+                    </a>
+                  </div>
+                  <div class="order-detail-info">
+                    <span class="order-detail-linkname">
+                        <a href="#">Apple MacBook Pro Retina Touch Bar 15" 256Gb Touch Bar
+                            Space Gray (MPTR2) 2017</a>
+                    </span>                    
+                    <span class="order-quantity">1 шт</span>
+                    <span class="order-price">28 099 грн</span>
+                  </div>
+                </div>
+                <div class="order-detail-item">
+                  <div class="order-detail-img">
+                    <a href="#" class="order-detail-img-link">
+                      <img src="img/img-product04.jpg" alt="Product">
+                    </a>
+                  </div>
+                  <div class="order-detail-info">
+                    <span class="order-detail-linkname">
+                      <a href="#">Беспроводная мышь Apple Magic Mouse 2 White</a>
+                    </span>
+                    <span class="order-quantity">1 шт</span>
+                    <span class="order-price">1 099 грн</span>
+                  </div>
+                </div>
+                <div class="order-detail-item">
+                  <div class="order-detail-img">
+                    <a href="#" class="order-detail-img-link">
+                      <img src="img/img-product02.jpg" alt="Product">
+                    </a>
+                  </div>
+                  <div class="order-detail-info">
+                    <span class="order-detail-linkname">
+                        <a href="#">Apple MacBook Pro Retina Touch Bar 15" 256Gb Touch Bar
+                            Space Gray (MPTR2) 2017</a>
+                    </span>                   
+                    <span class="order-quantity">1 шт</span>
+                    <span class="order-price">28 099 грн</span>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="order-detail-total bg-white">
+              <div class="row">
+                <div class="promocode-holder">
+                  <a href="#" class="promocode-link js-promocode-link">У меня есть промокод</a>
+                  <div class="promocode-holder-form">
+                    <form class=" form-promocode" id="form-promocode">
+                      <div class="promocode-holder-apply">
+                        <div class="input-holder field">
+                          <input type="text" class="input form-control">
+                          <label class="label-input">Промокод</label>
+                          <button class="promocode-apply">Применить</button>
+                        </div>
+                      </div>
+                    </form>
+                    <span class="ic-close-sm js-close-code"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <span class="info">3 товара на сумму:</span>
+                </div>
+                <div class="col col-val">
+                  <span class="val">79 950 грн</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <span class="info">Доставка:</span>
+                </div>
+                <div class="col col-val">
+                  <span class="val">по тарифам перевозчика</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <span class="info">Комиссия:</span>
+                </div>
+                <div class="col col-val">
+                  <span class="val">499 грн</span>
+                </div>
+              </div>
+              <div class="row total-row">
+                <div class="col col-info">
+                  <span class="info">ИТОГО:</span>
+                </div>
+                <div class="col col-val">
+                  <span class="val">80 449 грн</span>
+                </div>
+              </div>
+              <label for="submit-form" class="btn">Оформить заказ</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  //= templates/footer.html
+</body>
+
+</html>
