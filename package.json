@@ -9,7 +9,7 @@
   "author": "Anzhelika Bielykh",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.0",
+    "browser-sync": "^2.29.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.1.0",
     "gulp-clean-css": "^4.0.0",
